@@ -21,7 +21,7 @@ export const Container = styled.section`
       }
 
       p {
-        color: ${props => props.theme.colors.text};
+        color: ${props => props.theme.colors.primaryText};
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
         font-size: 1.187rem;

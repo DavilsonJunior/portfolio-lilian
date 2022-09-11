@@ -4,7 +4,7 @@ import React from 'react';
 import { Container } from './styles';
 
 export const Header = () => (
-  <Container>
+  <Container data-aos="fade-down">
     <div className="logo">
       <img src="/images/logo.png" alt="Logo" />
     </div>
