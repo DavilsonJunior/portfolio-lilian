@@ -12,14 +12,14 @@ export default createGlobalStyle`
 
   body {
     background: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primaryText};
     -webkit-font-smoothing: antialiased;
     font: 400 16px Roleway, sans-serif;
   }
 
 
   input, button {
-    font-family: 'Roleway', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.32rem;
   }
 
@@ -27,22 +27,22 @@ export default createGlobalStyle`
     font-size: 1rem;
     font-weight: 800;
     border: none;
-    font-family: Raleway, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     cursor: pointer;
     background: transparent;
   }
 
   h1 {
-    color:  ${props => props.theme.colors.text};
-    font-family: 'Playfair Display', sans-serif;
+    color:  ${props => props.theme.colors.primaryText};
+    font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: 3.69rem;
     line-height: 4.44rem;
   }
 
   h2 {
-    color:  ${props => props.theme.colors.text};
-    font-family: 'Playfair Display', sans-serif;
+    color:  ${props => props.theme.colors.primaryText};
+    font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: 2.75rem;
     line-height: 3rem;
@@ -50,7 +50,7 @@ export default createGlobalStyle`
 
   h3 {
     color:  ${props => props.theme.colors.primary};
-    font-family: 'Raleway', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: 2.125rem;
   }
@@ -64,11 +64,11 @@ export default createGlobalStyle`
   }
 
   a {
-    color:  ${props => props.theme.colors.text};
+    color:  ${props => props.theme.colors.primaryText};
     text-decoration: none;
   }
 
-  button.contained {
+  /* button.contained {
     font-family: Raleway, sans-serif;
     font-size: 1.312rem;
     font-weight: 900;
@@ -117,11 +117,11 @@ export default createGlobalStyle`
   }
 
   p {
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.primaryText};
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.187rem;
     line-height: 1.625rem;
-  }
+  } */
 
 `;

@@ -1,35 +1,33 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
-import logoImg from '../../assets/logo.png';
+import { Container } from './styles';
 
-import { Container, Menu } from './styles';
-
-const Header: React.FC = () => (
-  <Container data-aos="fade-down">
+export const Header = () => (
+  <Container>
     <div className="logo">
-      <img src={logoImg} alt="Logo" />
-      <span>NinjaMail</span>
+      <img src="/images/logo.png" alt="Logo" />
     </div>
-    <Menu>
-      <ul>
-        <li>
-          <a href="Features">FEATURES</a>
-        </li>
-        <li>
-          <a href="Pricing">PRICING</a>
-        </li>
-        <li>
-          <a href="Services">SERVICES</a>
-        </li>
-        <li>
-          <a href="Partners">PARTNERS</a>
-        </li>
-      </ul>
-      <button className="contained" type="button">
-        SIGN UP FREE
-      </button>
-    </Menu>
+    <input id="menu-toggle" type="checkbox" />
+    <label className="menu-button-container" htmlFor="menu-toggle">
+      <div className="menu-button" />
+    </label>
+    <ul className="menu">
+      <li>
+        <a href="features">Início</a>
+      </li>
+      <li>
+        <a href="pricing">Sobre</a>
+      </li>
+      <li>
+        <a href="services">Serviços</a>
+      </li>
+      <li>
+        <a href="partners">Como funciona</a>
+      </li>
+      <li id="last-bottom">
+        <a href="contact">Contato</a>
+      </li>
+    </ul>
   </Container>
 );
-
-export default Header;
