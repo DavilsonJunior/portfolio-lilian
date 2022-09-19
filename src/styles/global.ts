@@ -1,6 +1,5 @@
-import { darken, lighten } from 'polished';
 import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
+// import theme from './theme';
 
 export default createGlobalStyle`
   *{
@@ -9,6 +8,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
   }
+
+  /* html {
+    font-size: 100%;
+
+    @media (max-width: 1500px) {
+      font-size: 90%;
+    }
+  } */
 
   body {
     background: ${props => props.theme.colors.background};
@@ -34,13 +41,13 @@ export default createGlobalStyle`
 
   h1 {
     color:  ${props => props.theme.colors.primaryText};
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 900;
-    font-size: 3.69rem;
-    line-height: 4.44rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 364px;
+    /* line-height: 4.44rem; */
   }
 
-  h2 {
+  /* h2 {
     color:  ${props => props.theme.colors.primaryText};
     font-family: 'DM Sans', sans-serif;
     font-weight: 900;
@@ -53,7 +60,7 @@ export default createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
     font-weight: 900;
     font-size: 2.125rem;
-  }
+  } */
 
   img {
     width: 100%;
@@ -67,61 +74,4 @@ export default createGlobalStyle`
     color:  ${props => props.theme.colors.primaryText};
     text-decoration: none;
   }
-
-  /* button.contained {
-    font-family: Raleway, sans-serif;
-    font-size: 1.312rem;
-    font-weight: 900;
-
-    padding: 1.25rem 1.8rem;
-    color: ${theme.colors.primary};
-    background-color: ${theme.colors.secondary};
-    transition: background 500ms;
-  }
-
-  button.contained:hover {
-      background-color: ${lighten(0.1, theme.colors.secondary)};
-  }
-
-  button.outlined {
-    font-family: Raleway, sans-serif;
-    font-size: 1.312rem;
-    font-weight: 900;
-
-    padding: 1.125rem 1.8rem;
-    color: ${theme.colors.secondary};
-    border: 2px solid ${theme.colors.secondary};
-    background-color: ${theme.colors.primary};
-    transition: background 400ms;
-  }
-
-  button.outlined:hover {
-    background-color: ${lighten(0.1, theme.colors.secondary)};
-    border-color: ${lighten(0.1, theme.colors.secondary)};;
-    color: ${theme.colors.primary};
-  }
-
-  button.contained-light {
-    font-family: Raleway, sans-serif;
-    font-size: 1.312rem;
-    font-weight: 900;
-
-    padding: 1.25rem 1.8rem;
-    color: ${theme.colors.secondary};
-    background-color: ${theme.colors.primary};
-    transition: background 500ms;
-  }
-
-  button.contained-light:hover {
-    background-color: ${darken(0.2, theme.colors.primary)};
-  }
-
-  p {
-    color: ${props => props.theme.colors.primaryText};
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.187rem;
-    line-height: 1.625rem;
-  } */
-
 `;

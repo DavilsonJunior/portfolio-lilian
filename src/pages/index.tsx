@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { Header } from '../components/Header';
-import Hero from '../components/Hero';
+import { Header } from '../components/Header/Header';
+import { Hero } from '../components/Hero/Hero';
 
 export default function Home() {
   useEffect(() => {
@@ -15,7 +15,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main />
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
