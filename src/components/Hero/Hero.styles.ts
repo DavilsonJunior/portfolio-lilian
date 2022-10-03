@@ -149,9 +149,6 @@ export const HeroImage = styled.div`
     img.image {
       width: 100%;
       height: 100%;
-      max-width: 700px;
-      max-height: 524px;
-      box-shadow: 2rem -2rem ${theme.colors.boxShadowPurple};
     }
   }
 
@@ -159,6 +156,12 @@ export const HeroImage = styled.div`
     img.image {
       max-width: 700px;
       max-height: 524px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    img.image {
+      margin-right: 50px;
     }
   }
 `;

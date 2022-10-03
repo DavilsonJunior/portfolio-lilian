@@ -157,4 +157,10 @@ export const AboutImage = styled.div`
       max-height: 400px;
     }
   }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    img {
+      margin-right: -30px;
+    }
+  }
 `;
