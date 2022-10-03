@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { Animation, HeroContainer, HeroInfo, HeroImage } from './Hero.styles';
 
@@ -19,7 +19,7 @@ export function Hero() {
           {/* <div className="background-image" /> */}
 
           <img
-            // className="purple"
+            className="purple-hero"
             src="/images/backgrounds/background-purple.svg"
             alt="background purple"
           />

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { lighten } from 'polished';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
@@ -186,9 +185,13 @@ export const HeroImage = styled.div`
       margin-top: -550px;
       margin-left: -0px;
     }
+
+    img.purple-hero {
+      margin-left: -30px;
+    }
   }
 
-  @media (max-width: ${theme.breakpoints.sm}) {
+  /* @media (max-width: ${theme.breakpoints.sm}) {
     margin: 10px auto;
     padding: 20px;
 
@@ -199,10 +202,16 @@ export const HeroImage = styled.div`
 
     img.image {
       margin: auto;
-      /* margin-top: -370px;
-      margin-left: -60px; */
+
       margin-top: -550px;
       margin-left: -20px;
     }
-  }
+  } */
 `;
+
+// img.image {
+
+//     /* margin-top: -370px;
+//     margin-left: -60px; */
+
+//   }
