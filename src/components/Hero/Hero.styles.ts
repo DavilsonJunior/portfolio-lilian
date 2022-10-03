@@ -7,16 +7,19 @@ export const Animation = styled.div`
 `;
 
 export const HeroContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
   max-width: 1500px;
+  height: 500px;
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 `;
 
@@ -25,7 +28,6 @@ export const HeroInfo = styled.div`
 
   h1 {
     color: ${theme.colors.primaryText};
-    /* font-size: 36px; */
     font-size: 2.75rem;
     font-weight: 700;
     max-width: 500px;
@@ -33,7 +35,6 @@ export const HeroInfo = styled.div`
 
   h2 {
     color: ${theme.colors.infoText};
-    /* font-size: 18px; */
     font-size: 1.375rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -87,6 +88,7 @@ export const HeroInfo = styled.div`
 
   @media (max-width: ${theme.breakpoints.md}) {
     text-align: center;
+    margin-bottom: 60px;
 
     h1 {
       margin: auto;
@@ -132,86 +134,31 @@ export const HeroInfo = styled.div`
 `;
 
 export const HeroImage = styled.div`
-  height: 405px;
-
-  img {
-    max-width: 606px;
-    max-height: 430px;
-  }
+  padding: 0 30px;
+  height: auto;
 
   img.image {
-    margin-top: -380px;
-    margin-left: -70px;
+    width: 100%;
+    height: 420px;
+    max-width: 700px;
+    max-height: 524px;
+    box-shadow: 2rem -2rem ${theme.colors.boxShadowPurple};
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    img {
-      max-width: 676px;
-      max-height: 400px;
-    }
-
     img.image {
-      margin-top: -370px;
-      margin-left: -40px;
-    }
-  }
-
-  @media (max-width: ${theme.breakpoints.mdToLg}) {
-    img {
-      max-width: 606px;
-      max-height: 330px;
-    }
-
-    img.image {
-      margin-top: -370px;
-      margin-left: -40px;
+      width: 100%;
+      height: 100%;
+      max-width: 700px;
+      max-height: 524px;
+      box-shadow: 2rem -2rem ${theme.colors.boxShadowPurple};
     }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
-    /* margin-top: 50px; */
-    margin: 0px auto;
-    padding: 30px;
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
     img.image {
-      margin: auto;
-      /* margin-top: -370px;
-      margin-left: -60px; */
-      margin-top: -550px;
-      margin-left: -0px;
-    }
-
-    img.purple-hero {
-      margin-left: -30px;
+      max-width: 700px;
+      max-height: 524px;
     }
   }
-
-  /* @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 10px auto;
-    padding: 20px;
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    img.image {
-      margin: auto;
-
-      margin-top: -550px;
-      margin-left: -20px;
-    }
-  } */
 `;
-
-// img.image {
-
-//     /* margin-top: -370px;
-//     margin-left: -60px; */
-
-//   }

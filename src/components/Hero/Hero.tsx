@@ -16,25 +16,11 @@ export function Hero() {
           <button type="button">Entre em contato</button>
         </HeroInfo>
         <HeroImage>
-          {/* <div className="background-image" /> */}
-
-          <img
-            className="purple-hero"
-            src="/images/backgrounds/background-purple.svg"
-            alt="background purple"
-          />
-
           <img
             className="image"
             src="/images/backgrounds/background-hero.svg"
             alt="background hero"
           />
-          {/* <Image
-            width="626px"
-            height="450px"
-            src="/images/backgrounds/background-hero.svg"
-            alt="background hero"
-          /> */}
         </HeroImage>
       </HeroContainer>
     </Animation>

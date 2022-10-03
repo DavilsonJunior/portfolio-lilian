@@ -13,12 +13,6 @@ export function About() {
       <AboutContainer className="hero">
         <AboutImage>
           <img
-            className="purple"
-            src="/images/backgrounds/background-purple-profile.svg"
-            alt="background purple"
-          />
-
-          <img
             className="image"
             src="/images/backgrounds/background-profile.jpg"
             alt="background hero"

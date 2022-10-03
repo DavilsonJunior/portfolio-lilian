@@ -4,12 +4,21 @@ import theme from '../../styles/theme';
 export const Animation = styled.div`
   padding: 1em;
   margin: 150px 0;
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    margin: 110px 0;
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    margin: 80px 0;
+  }
 `;
 
 export const AboutContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+
   max-width: 1500px;
   margin: auto;
 
@@ -21,8 +30,7 @@ export const AboutContainer = styled.section`
 `;
 
 export const AboutInfo = styled.div`
-  margin-top: 70px;
-  max-width: 610px;
+  max-width: 680px;
 
   h1 {
     color: ${theme.colors.primaryText};
@@ -37,12 +45,10 @@ export const AboutInfo = styled.div`
     font-weight: 400;
     margin: 28px 0;
     text-align: justify;
-    max-width: 500px;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    margin-top: 50px;
-
+    max-width: 610px;
     h1 {
       font-size: 36px;
     }
@@ -53,7 +59,7 @@ export const AboutInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin-top: 0px;
+    max-width: 550px;
 
     h1 {
       font-size: 32px;
@@ -62,12 +68,12 @@ export const AboutInfo = styled.div`
     p {
       font-size: 14px;
       margin: 22px 0;
-      max-width: 430px;
     }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
     text-align: center;
+    max-width: 100%;
 
     h1 {
       margin: auto;
@@ -79,7 +85,6 @@ export const AboutInfo = styled.div`
     p {
       font-size: 20px;
       margin: 22px 0;
-      max-width: 800px;
     }
   }
 
@@ -90,10 +95,9 @@ export const AboutInfo = styled.div`
       text-align: center;
     }
 
-    h2 {
-      font-size: 18px;
+    p {
+      font-size: 16px;
       margin: 22px 0;
-      max-width: 540px;
     }
   }
 
@@ -107,22 +111,18 @@ export const AboutInfo = styled.div`
     h2 {
       font-size: 16px;
       margin: 16px 0;
-      max-width: 400px;
     }
   }
 `;
 
 export const AboutImage = styled.div`
   height: 405px;
+  padding: 0 30px;
 
   img {
-    max-width: 423px;
-    max-height: 423px;
-  }
-
-  img.image {
-    margin-top: -375px;
-    margin-left: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: -2rem -2rem ${theme.colors.boxShadowPurple};
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -130,116 +130,31 @@ export const AboutImage = styled.div`
       max-width: 400px;
       max-height: 400px;
     }
-
-    img.image {
-      margin-top: -350px;
-      margin-left: 40px;
-    }
   }
 
-  /* @media (max-width: ${theme.breakpoints.mdToLg}) {
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    margin-top: auto;
+
     img {
-      max-width: 360px;
+      max-width: 400px;
       max-height: 400px;
     }
-
-    img.image {
-      margin-top: -350px;
-      margin-left: 40px;
-    }
-  } */
-
-  @media (max-width: ${theme.breakpoints.md}) {
-    margin: 0px auto 240px;
-    padding: 30px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 100%;
-      max-width: 550px;
-      max-height: 550px;
-    }
-
-    img.image {
-      margin-top: -510px;
-      margin-bottom: 0px;
-      margin-left: 40px;
-    }
-    /* box-shadow: 0 01px #ebe7f6, 01px 0 #ebe7f6, 01px 02px #ebe7f6,
-        02px 01px #ebe7f6, 02px 03px #ebe7f6, 03px 02px #ebe7f6,
-        03px 04px #ebe7f6, 04px 03px #ebe7f6, 04px 05px #ebe7f6,
-        05px 04px #ebe7f6, 05px 06px #ebe7f6, 06px 05px #ebe7f6,
-        06px 07px #ebe7f6, 07px 06px #ebe7f6, 07px 08px #ebe7f6,
-        08px 07px #ebe7f6;
-    } */
-
-    img.purple {
-      margin-top: 0px;
-      margin-left: 0px;
-    }
   }
 
-  /* @media (max-width: 626px) {
-    margin: 0px auto auto;
-    padding: 30px;
-
-    img {
-      width: 100%;
-      max-width: 550px;
-      max-height: 550px;
-      margin-bottom: 20px;
-    }
-
-    img.image {
-      margin-top: -480px;
-      margin-bottom: 0px;
-      margin-left: 40px;
-      display: flex;
-    }
-
-    img.purple {
-      margin-top: 0px;
-      margin-left: 0px;
-    }
-  } */
-
-  @media (max-width: 626px) {
-    margin: 0px auto 200px;
-    padding: 30px;
-
-    display: block;
-
-    img {
-      max-width: 100%;
-      /* max-height: 100%; */
-      /* height: 500px; */
-    }
-
-    img.image {
-      /* margin: auto; */
-      margin-top: -550px;
-      margin-left: -0px;
-    }
-
-    img.purple {
-      /* margin: auto; */
-      width: 100%;
-      margin-left: -20px;
-    }
+  @media (max-width: ${theme.breakpoints.md}) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 0px auto 150px;
-  }
+    height: auto;
+    width: 100%;
 
-  @media (max-width: 560px) {
-    margin: 0px auto 110px;
-  }
-
-  @media (max-width: 500px) {
-    margin: 0px auto 50px;
+    img {
+      width: 100%;
+      max-width: 400px;
+      max-height: 400px;
+    }
   }
 `;

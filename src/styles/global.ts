@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// import theme from './theme';
 
 export default createGlobalStyle`
   *{
@@ -8,14 +7,6 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
   }
-
-  /* html {
-    font-size: 100%;
-
-    @media (max-width: 1500px) {
-      font-size: 90%;
-    }
-  } */
 
   body {
     background: ${props => props.theme.colors.background};
@@ -44,23 +35,7 @@ export default createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 364px;
-    /* line-height: 4.44rem; */
   }
-
-  /* h2 {
-    color:  ${props => props.theme.colors.primaryText};
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 900;
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
-
-  h3 {
-    color:  ${props => props.theme.colors.primary};
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 900;
-    font-size: 2.125rem;
-  } */
 
   img {
     width: 100%;
