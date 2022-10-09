@@ -14,10 +14,14 @@ export function Header() {
         <div className="logo">
           <img src="/images/logos/logo.png" alt="Logo" />
         </div>
-        <input id="menu-toggle" type="checkbox" />
+        <input
+          onClick={() => setIsActiveMenu(!isActiveMenu)}
+          id="menu-toggle"
+          type="checkbox"
+        />
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div
-            onClick={() => setIsActiveMenu(!isActiveMenu)}
+            // onClick={() => setIsActiveMenu(!isActiveMenu)}
             className="menu-button"
           />
         </label>

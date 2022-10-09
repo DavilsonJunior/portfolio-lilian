@@ -15,9 +15,11 @@ export const HeroContainer = styled.section`
   height: 500px;
   margin: auto;
 
+  z-index: 1px;
+
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     height: auto;
   }

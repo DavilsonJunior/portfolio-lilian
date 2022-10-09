@@ -18,7 +18,7 @@ export function Hero() {
         <HeroImage>
           <img
             className="image"
-            src="/images/backgrounds/background-hero.svg"
+            src="/images/backgrounds/background-hero.jpg"
             alt="background hero"
           />
         </HeroImage>
