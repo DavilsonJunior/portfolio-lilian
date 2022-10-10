@@ -27,10 +27,10 @@ export function Header() {
         </label>
         <ul className="menu">
           <li>
-            <a href="features">Início</a>
+            <a href="#hero">Início</a>
           </li>
           <li>
-            <a href="pricing">Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
             <a href="services">Serviços</a>

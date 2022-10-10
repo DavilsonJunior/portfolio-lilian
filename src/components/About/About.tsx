@@ -10,7 +10,7 @@ import {
 export function About() {
   return (
     <Animation data-aos="fade-up">
-      <AboutContainer className="hero">
+      <AboutContainer id="about" className="hero">
         <AboutImage>
           <img
             className="image"
