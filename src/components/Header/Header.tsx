@@ -33,7 +33,7 @@ export function Header() {
             <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="services">Serviços</a>
+            <a href="#services">Serviços</a>
           </li>
           <li>
             <a href="partners">Como funciona</a>

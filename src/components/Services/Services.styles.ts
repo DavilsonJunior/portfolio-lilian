@@ -2,25 +2,30 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  padding: 1em;
   margin: 150px 0;
 
+  @media (max-width: ${theme.breakpoints.lg}) {
+    margin: 0px 0px;
+    padding: 0;
+  }
+
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    margin: 90px 0;
+  }
+
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 110px 0;
+    margin: 90px 0;
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 80px 0;
+    margin: 30px 0;
   }
 `;
 
 export const ServicesContainer = styled.section`
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-
   max-width: 1500px;
   margin: auto;
+  padding: 1.25rem;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
@@ -80,12 +85,12 @@ export const ServicesInfo = styled.div`
       margin: auto;
       font-size: 40px;
       max-width: 520px;
-      text-align: center;
     }
 
     p {
       font-size: 20px;
       margin: 22px 0;
+      text-align: justify;
     }
   }
 
@@ -99,6 +104,7 @@ export const ServicesInfo = styled.div`
     p {
       font-size: 16px;
       margin: 22px 0;
+      text-align: justify;
     }
   }
 
@@ -121,6 +127,8 @@ export const ServicesExperian = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 
+  margin-top: 3.125rem;
+
   .card {
     -webkit-box-shadow: 1px 1px 5px -2px #000000;
     box-shadow: 1px 1px 5px -2px #000000;
@@ -131,17 +139,64 @@ export const ServicesExperian = styled.div`
     flex-direction: column;
     align-items: center;
 
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
     span {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 22px;
       color: ${theme.colors.primaryText};
       margin: 16px 0 8px;
+      font-family: 'DM Sans', sans-serif;
     }
 
     p {
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
       color: ${theme.colors.infoText};
+      font-family: 'DM Sans', sans-serif;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.5rem;
+
+    span {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+
+    span {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+
+    span {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 `;

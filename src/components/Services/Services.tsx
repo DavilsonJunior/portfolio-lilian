@@ -7,10 +7,11 @@ import {
   ServicesInfo,
   ServicesExperian
 } from './Services.styles';
+import { services } from './Services.values';
 
 export function Services() {
   return (
-    <Animation data-aos="fade-up">
+    <Animation id="services" data-aos="fade-up">
       <ServicesContainer className="hero">
         <ServicesInfo>
           <h1>Serviços</h1>
@@ -26,100 +27,19 @@ export function Services() {
           </p>
         </ServicesInfo>
         <ServicesExperian>
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
+          {services.map(service => (
+            <div key={service.id} className="card">
+              <Image
+                width="60px"
+                height="60px"
+                src={service.icon}
+                alt={`icon ${service.title}`}
+              />
 
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
-
-          <div className="card">
-            <Image
-              width="60px"
-              height="60px"
-              src="/images/icons/icon-room.svg"
-              alt="icon room"
-            />
-
-            <span>Sala</span>
-            <p>organização de livros, CD´s, DVD´s e jogos de vídeo games.</p>
-          </div>
+              <span>{service.title}</span>
+              <p>{service.description}</p>
+            </div>
+          ))}
         </ServicesExperian>
       </ServicesContainer>
     </Animation>
