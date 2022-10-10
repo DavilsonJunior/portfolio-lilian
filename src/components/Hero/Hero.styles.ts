@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  padding: 1em;
+  /* padding: 1em; */
   margin-top: 60px;
 `;
 
@@ -11,11 +11,11 @@ export const HeroContainer = styled.section`
   justify-content: space-between;
   align-items: center;
 
+  padding: 20px;
+
   max-width: 1500px;
   height: 500px;
   margin: auto;
-
-  z-index: 1px;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
@@ -97,6 +97,7 @@ export const HeroInfo = styled.div`
       font-size: 40px;
       max-width: 520px;
       text-align: center;
+      margin-top: 30px;
     }
 
     h2 {

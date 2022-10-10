@@ -15,7 +15,8 @@ export const ContainerHeader = styled.header<MenuProps>`
   margin: auto;
 
   height: 90px;
-  padding: 1em;
+  /* padding: 1em; */
+  padding: 20px;
 
   border-bottom: 2px solid ${theme.colors.borderBottom};
 

@@ -2,15 +2,18 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  padding: 1em;
   margin: 150px 0;
 
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    margin: 90px 0;
+  }
+
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 110px 0;
+    margin: 90px 0;
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 80px 0;
+    margin: 30px 0;
   }
 `;
 
@@ -18,6 +21,8 @@ export const AboutContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 20px;
 
   max-width: 1500px;
   margin: auto;
@@ -49,6 +54,7 @@ export const AboutInfo = styled.div`
 
   @media (max-width: ${theme.breakpoints.lg}) {
     max-width: 610px;
+
     h1 {
       font-size: 36px;
     }
@@ -74,6 +80,7 @@ export const AboutInfo = styled.div`
   @media (max-width: ${theme.breakpoints.md}) {
     text-align: center;
     max-width: 100%;
+    margin-top: 20px;
 
     h1 {
       margin: auto;
