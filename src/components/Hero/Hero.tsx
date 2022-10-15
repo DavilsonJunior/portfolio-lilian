@@ -5,8 +5,8 @@ import { Animation, HeroContainer, HeroInfo, HeroImage } from './Hero.styles';
 
 export function Hero() {
   return (
-    <Animation data-aos="fade-up">
-      <HeroContainer id="hero" className="hero">
+    <Animation id="hero" data-aos="fade-up">
+      <HeroContainer className="hero">
         <HeroInfo>
           <h1>Ambiente agradável para todos os gostos</h1>
           <h2>

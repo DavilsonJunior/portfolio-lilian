@@ -3,7 +3,7 @@ const theme = {
     background: '#FFF',
     boxShadowPurple: '#ebe7f6',
     borderBottom: '#E4E4E4',
-    primaryText: '#0F241D',
+    primaryText: '#2F2E41',
     primary: '#8257E5',
     secondary: '#4BA87D',
     infoText: '#767676',
