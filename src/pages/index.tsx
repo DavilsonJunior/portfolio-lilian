@@ -9,6 +9,8 @@ import { Services } from '../components/Services/Services';
 import { ServicesPlusStart } from '../components/ServicesPlusStart/ServicesPlusStart';
 import { ServicesPlusEnd } from '../components/ServicesPlusEnd/ServicesPlusEnd';
 import { HowWork } from '../components/HowWork/HowWork';
+import { Gallery } from '../components/Gallery/Gallery';
+import { Contact } from '../components/Contact/Contact';
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +29,8 @@ export default function Home() {
         <ServicesPlusStart />
         <ServicesPlusEnd />
         <HowWork />
+        <Gallery />
+        <Contact />
       </main>
     </>
   );

@@ -23,6 +23,7 @@ export function HowWork() {
           <div className="topics">
             {howWorkTopics.map(howWork => (
               <HowWorkTopic
+                key={howWork.id}
                 number={howWork.id}
                 title={howWork.title}
                 description={howWork.description}
