@@ -9,7 +9,7 @@ import {
 
 export function About() {
   return (
-    <Animation id="about" data-aos="fade-up">
+    <Animation id="about" data-aos="fade-right">
       <AboutContainer className="hero">
         <AboutImage>
           <img

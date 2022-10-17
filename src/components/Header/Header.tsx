@@ -20,10 +20,7 @@ export function Header() {
           type="checkbox"
         />
         <label className="menu-button-container" htmlFor="menu-toggle">
-          <div
-            // onClick={() => setIsActiveMenu(!isActiveMenu)}
-            className="menu-button"
-          />
+          <div className="menu-button" />
         </label>
         <ul className="menu">
           <li>
@@ -36,10 +33,13 @@ export function Header() {
             <a href="#services">Serviços</a>
           </li>
           <li>
-            <a href="partners">Como funciona</a>
+            <a href="#howwork">Como funciona</a>
+          </li>
+          <li>
+            <a href="#gallery">Galeria</a>
           </li>
           <li id="last-bottom">
-            <a href="contact">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </ContainerHeader>

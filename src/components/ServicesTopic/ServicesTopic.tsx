@@ -7,7 +7,7 @@ interface ServiceTopicsProps {
 
 export function ServicesTopic({ title, description }: ServiceTopicsProps) {
   return (
-    <ServicesTopicsContainer>
+    <ServicesTopicsContainer data-aos="zoom-in">
       <img
         src="/images/icons/icon-arrow-right-circle.svg"
         alt="arrow circle icon"

@@ -7,7 +7,7 @@ import { Animation, HowWorkContainer, HowWorkInfo } from './HowWork.styles';
 
 export function HowWork() {
   return (
-    <Animation id="about" data-aos="fade-up">
+    <Animation id="howwork" data-aos="fade-up">
       <HowWorkContainer className="hero">
         <HowWorkInfo>
           <h1>Como funciona?</h1>

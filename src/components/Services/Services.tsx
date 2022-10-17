@@ -11,9 +11,9 @@ import { services } from './Services.values';
 
 export function Services() {
   return (
-    <Animation id="services" data-aos="fade-up">
+    <Animation id="services">
       <ServicesContainer className="hero">
-        <ServicesInfo>
+        <ServicesInfo data-aos="fade-up">
           <h1>Serviços</h1>
           <p>
             Realizamos uma organização personalizada da sua casa! Cada
@@ -28,7 +28,7 @@ export function Services() {
         </ServicesInfo>
         <ServicesExperian>
           {services.map(service => (
-            <div key={service.id} className="card">
+            <div key={service.id} className="card" data-aos="zoom-in">
               <Image
                 width="60px"
                 height="60px"

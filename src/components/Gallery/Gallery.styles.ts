@@ -25,8 +25,65 @@ export const GalleryContainer = styled.section`
 
   padding: 20px;
 
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
+
+  .gallery-preview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    a {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      color: ${theme.colors.infoText};
+      cursor: pointer;
+      transition: color 400ms ease;
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        font-size: 16px;
+        margin-left: 8px;
+      }
+
+      &:hover {
+        color: ${theme.colors.primary};
+      }
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    .gallery-preview {
+      justify-content: center;
+      margin-top: 20px;
+
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'DM Sans', sans-serif;
+        color: ${theme.colors.primary};
+        transition: color 400ms ease;
+
+        display: flex;
+        align-items: center;
+
+        svg {
+          font-size: 16px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    .gallery-preview {
+      margin-top: 0px;
+    }
+  }
 `;
 
 export const GalleryInfo = styled.div`
@@ -184,7 +241,7 @@ export const GalleryImages = styled.div`
   }
 
   @media (max-width: 800px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     & > .active .image-opacity {
       height: 100%;
