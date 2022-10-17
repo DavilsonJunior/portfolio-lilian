@@ -52,11 +52,12 @@ export const ContactInfo = styled.div`
     max-width: 740px;
   }
 
-  button {
+  a {
     background-color: ${theme.colors.primary};
     color: ${theme.colors.buttonText};
     font-size: 16px;
     font-weight: 500;
+    max-width: 236px;
 
     padding: 16px 32px;
     border-radius: 4px;

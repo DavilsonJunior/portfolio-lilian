@@ -11,6 +11,7 @@ import { ServicesPlusEnd } from '../components/ServicesPlusEnd/ServicesPlusEnd';
 import { HowWork } from '../components/HowWork/HowWork';
 import { Gallery } from '../components/Gallery/Gallery';
 import { Contact } from '../components/Contact/Contact';
+import { Footer } from '../components/Footer/Footer';
 
 export default function Home() {
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Home() {
         <HowWork />
         <Gallery />
         <Contact />
+        <Footer />
       </main>
     </>
   );

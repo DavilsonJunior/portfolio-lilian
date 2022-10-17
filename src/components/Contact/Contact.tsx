@@ -8,8 +8,10 @@ import {
 } from './Contact.styles';
 
 export function Contact() {
+  // const message = 'Olá Lilian, tudo bom? Gostaria de um orçamento!';
+
   return (
-    <Animation id="Contact" data-aos="fade-up">
+    <Animation id="contact" data-aos="fade-up">
       <ContactContainer>
         <ContactInfo>
           <h1>Entre em contato com a gente!</h1>
@@ -19,10 +21,14 @@ export function Contact() {
             fazer um orçamento.
           </p>
 
-          <button type="button">
+          <a
+            href="https://api.whatsapp.com/send?phone=5516996469902"
+            target="_blank"
+            rel="noreferrer"
+          >
             <RiWhatsappLine />
             Entre em contato
-          </button>
+          </a>
         </ContactInfo>
         <ContactSocialMedia>
           <div className="item-social-media">

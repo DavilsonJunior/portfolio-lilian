@@ -12,7 +12,7 @@ export function HowWorkTopic({
   description
 }: HowWorkTopicProps) {
   return (
-    <HowWorkContainer>
+    <HowWorkContainer data-aos="zoom-in">
       <div className="item-ball">{number}</div>
       <div className="content">
         <strong>{title}</strong>
