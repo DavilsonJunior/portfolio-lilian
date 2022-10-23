@@ -25,15 +25,15 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <About />
         <Services />
         <ServicesPlusStart />
         <ServicesPlusEnd />
         <HowWork />
+        <About />
         <Gallery />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

@@ -27,16 +27,16 @@ export function Header() {
             <a href="#hero">Início</a>
           </li>
           <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
             <a href="#services">Serviços</a>
           </li>
           <li>
             <a href="#howwork">Como funciona</a>
           </li>
           <li>
-            <a href="#gallery">Galeria</a>
+            <a href="#about">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#gallery">Fotos</a>
           </li>
           <li id="last-bottom">
             <a href="#contact">Contato</a>

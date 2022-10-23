@@ -45,7 +45,7 @@ export function Gallery() {
           </div>
         </GalleryImages>
         <div className="gallery-preview">
-          <a>
+          <a href="/gallery">
             Ver todos <HiArrowNarrowRight />
           </a>
         </div>
