@@ -15,7 +15,6 @@ export const ContainerHeader = styled.header<MenuProps>`
   margin: auto;
 
   height: 150px;
-  /* padding: 1em; */
   padding: 20px;
 
   border-bottom: 2px solid ${theme.colors.borderBottom};
@@ -109,7 +108,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     transform: rotate(-405deg);
   }
 
-  @media (max-width: ${theme.breakpoints.smToMd}) {
+  @media (max-width: 900px) {
     border-bottom: 1px solid ${theme.colors.borderBottom};
 
     .menu-button-container {
