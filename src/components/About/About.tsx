@@ -23,18 +23,20 @@ export function About() {
           <p>
             Sou Lílian Azevedo, Personal Organizer formada pela OZ! Organize sua
             Vida, que é a empresa pioneira no setor de formação de profissionais
-            da organização e que é membro da NAPO (National Association of
-            Professional Organizers) uma das maiores associações de
-            organizadores profissionais do mundo.
+            da organização e membro da NAPO, uma das maiores associações de
+            profissionais de organização e produtividade do mundo.
           </p>
           <p>
-            Além do curso de Personal Organizer, tenho especialização em
-            Treinamento de empregadas, em Organização de Mudanças Residenciais,
-            em Organização de Home Offices e em Organização Baby.
+            Além do curso de Personal Organizer, tenho especializações, também
+            pela OZ! Organize sua Vida, em Treinamento de empregadas,
+            Organização de Mudanças Residenciais, Organização de Home Offices e
+            Organização Baby.
           </p>
           <p>
-            Tenho usado minhas habilidades como Personal Organizer Certificada
-            para organizar ambientes de maneira a facilitar a vida das pessoas.
+            Tenho usado minha paixão pela organização, meus conhecimentos e
+            minhas habilidades como Personal Organizer certificada para
+            organizar ambientes de maneira a facilitar a vida das pessoas e
+            melhorar a sua qualidade de vida
           </p>
           <p>
             Meus serviços estão disponíveis na região do estado de São Paulo,
@@ -43,9 +45,9 @@ export function About() {
           </p>
           <p>
             Também faço consultorias online de organização, e nesse caso, quem
-            coloca a mão na massa é você com as minhas orientações. Assim como a
-            organização feita por mim, a consultoria é personalizada para cada
-            cliente, de acordo com o seu objetivo.
+            coloca a mão na massa é você de acordo com as minhas orientações.
+            Assim como a organização presencial feita por mim, a consultoria
+            online é personalizada, de acordo com o seu desejo e objetivo.
           </p>
         </AboutInfo>
       </AboutContainer>

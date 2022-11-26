@@ -8,10 +8,14 @@ export function Hero() {
     <Animation id="hero" data-aos="fade-up">
       <HeroContainer className="hero">
         <HeroInfo>
-          <h1>Ambiente agradável para todos os gostos</h1>
+          <h1>
+            A organização traz mais praticidade e bem-estar para o seu
+            dia-a-dia.
+          </h1>
           <h2>
-            Se você esta buscando uma forma de organizar sua casa ou ambiente de
-            trabalho de uma forma mais organizada eu posso te ajudar.
+            Eu vou lhe mostrar como uma Personal Organizer pode fazer a
+            diferença na organização da sua casa, melhorando o seu dia-a-dia
+            através do bom aproveitamento dos espaços físicos de sua casa.
           </h2>
           <button type="button">Entre em contato</button>
         </HeroInfo>

@@ -14,8 +14,7 @@ export const ContainerHeader = styled.header<MenuProps>`
   max-width: 1500px;
   margin: auto;
 
-  height: 90px;
-  /* padding: 1em; */
+  height: 150px;
   padding: 20px;
 
   border-bottom: 2px solid ${theme.colors.borderBottom};
@@ -27,7 +26,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     align-items: center;
 
     img {
-      width: 150px;
+      width: 250px;
     }
   }
 
@@ -45,7 +44,7 @@ export const ContainerHeader = styled.header<MenuProps>`
 
     a {
       color: ${theme.colors.primaryText};
-      height: 90px;
+      height: 150px;
       display: flex;
       align-items: center;
       border-bottom: 2px solid transparent;
@@ -109,7 +108,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     transform: rotate(-405deg);
   }
 
-  @media (max-width: ${theme.breakpoints.smToMd}) {
+  @media (max-width: 900px) {
     border-bottom: 1px solid ${theme.colors.borderBottom};
 
     .menu-button-container {
@@ -118,7 +117,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     .menu {
       position: absolute;
       top: 0;
-      margin-top: 90px;
+      margin-top: 150px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -158,6 +157,14 @@ export const ContainerHeader = styled.header<MenuProps>`
 
       &:hover {
         filter: brightness(0.9);
+      }
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    div.logo {
+      img {
+        width: 200px;
       }
     }
   }

@@ -30,9 +30,9 @@ export const HeroInfo = styled.div`
 
   h1 {
     color: ${theme.colors.primaryText};
-    font-size: 2.75rem;
+    font-size: 40px;
     font-weight: 700;
-    max-width: 500px;
+    max-width: 550px;
   }
 
   h2 {
@@ -41,7 +41,7 @@ export const HeroInfo = styled.div`
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     margin: 28px 0;
-    max-width: 560px;
+    max-width: 600px;
   }
 
   button {
