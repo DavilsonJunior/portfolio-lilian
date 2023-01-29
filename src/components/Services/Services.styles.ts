@@ -3,15 +3,15 @@ import theme from '../../styles/theme';
 
 export const Animation = styled.div`
   /* margin: 150px 0; */
-  margin: 0;
+  margin: 3rem 0;
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    margin: 20px 0;
+    margin: 3rem 0;
     padding: 0;
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0; */
+    margin: 1rem 0;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
@@ -26,7 +26,7 @@ export const Animation = styled.div`
 export const ServicesContainer = styled.section`
   max-width: 1500px;
   margin: auto;
-  padding: 0 1.25rem;
+  padding: 1.25rem;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;

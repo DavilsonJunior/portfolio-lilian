@@ -4,7 +4,11 @@ import theme from '../../styles/theme';
 export const Animation = styled.div`
   /* padding: 1em; */
   /* margin-top: 60px; */
-  margin: 0;
+  margin: 2.2rem 0;
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    margin: 0rem 0;
+  }
 `;
 
 export const HeroContainer = styled.section`
