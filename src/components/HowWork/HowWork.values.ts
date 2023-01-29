@@ -3,19 +3,19 @@ export const howWorkTopics = [
     id: 1,
     title: 'Visita técnica',
     description:
-      'A primeira etapa é a realização da visita técnica: combinamos um dia para que eu possa conhecer o espaço a ser organizado, podemos também fazer por videochamada. Nessa visita eu avalio os ambientes a serem organizados, entendo a sua rotina e identifico as oportunidades para otimizar o espaço disponível.'
+      'A primeira etapa é a realização da visita técnica, que pode ser presencial ou online: combinamos um dia para que eu possa ir conhecer o espaço a ser organizado ou podemos fazer um videochamada. Em alguns casos, solicito o envio de fotos ou vídeos dos ambientes que deseja organizar Nessa visita eu avalio os ambientes, entendo a sua rotina e identifico as oportunidades para otimizar o espaço disponível.'
   },
   {
     id: 2,
-    title: 'Proposta Comercial',
+    title: 'Proposta e orçamento',
     description:
       'Após a visita técnica, elaboro a proposta comercial, que terá a análise do espaço, os objetivos que se espera com a organização, os dias e as horas necessárias para a realização do projeto, bem como o orçamento e as condições de pagamento.'
   },
   {
     id: 3,
-    title: 'Execução do projeto',
+    title: 'Execução da organização',
     description:
-      'Após a aprovação da proposta, agendamos a melhor data e horário para a execução do projeto. Eu e minha equipe realizamos a organização que engloba várias etapas, como por exemplo: assessoria sobre os possíveis descartes, consertos e doações; categorização; planejamento e demarcação dos espaços; assessoria para a compra de produtos organizadores; identificação dos espaços com as etiquetas; treinamento do cliente ou responsável pela organização.'
+      'Após a aprovação da proposta, agendamos a melhor data e horário para a execução do projeto. Eu e minha equipe realizamos a organização que engloba várias etapas, como por exemplo: assessoria sobre os possíveis descartes; categorização; planejamento e demarcação dos espaços; assessoria para a compra de produtos organizadores; identificação dos espaços com as etiquetas; treinamento do cliente ou responsável pela organização.'
   },
   {
     id: 4,

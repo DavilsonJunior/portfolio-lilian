@@ -7,6 +7,7 @@ const theme = {
     primary: '#8257E5',
     secondary: '#4BA87D',
     infoText: '#767676',
+    infoTextSecondary: '#333333',
     buttonText: '#F9F9F9',
     border: '#9F9F9F',
     borderHeader: '#ccc'

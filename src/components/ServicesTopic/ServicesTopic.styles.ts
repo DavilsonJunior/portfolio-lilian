@@ -4,6 +4,7 @@ import theme from '../../styles/theme';
 export const ServicesTopicsContainer = styled.div`
   display: flex;
   max-width: 697px;
+  margin-bottom: 1.25rem;
 
   img {
     width: 24px;

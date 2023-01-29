@@ -3,14 +3,14 @@ export const services = [
     id: 1,
     icon: '/images/icons/icon-room.svg',
     title: 'Sala',
-    description: 'organização de livros, CD´s, DVD´s e jogos de vídeo games.'
+    description: 'Organização de livros, CD´s, DVD´s e jogos de vídeo games.'
   },
   {
     id: 2,
     icon: '/images/icons/icon-bedroom.svg',
     title: 'Quarto e closet',
     description:
-      'organização de closets femininos, masculinos, infantis e cama baú – incluindo rouparia, sapatos, jóias, bijuterias, maquiagens, óculos e bolsas.'
+      'Organização de closets femininos, masculinos, infantis e cama baú – incluindo rouparia, sapatos, jóias, bijuterias, maquiagens, óculos e bolsas.'
   },
   {
     id: 3,

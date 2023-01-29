@@ -2,18 +2,19 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  margin: 150px 0;
+  /* margin: 150px 0; */
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
+    margin: 60px 0;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
 `;
 
@@ -22,7 +23,7 @@ export const ContactContainer = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 
   max-width: 1200px;
   margin: auto;
@@ -31,6 +32,10 @@ export const ContactContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    padding: 20px;
   }
 `;
 
@@ -152,6 +157,7 @@ export const ContactSocialMedia = styled.div`
   .item-social-media {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img {
       width: 100%;
@@ -172,9 +178,16 @@ export const ContactSocialMedia = styled.div`
   }
 
   @media (max-width: 400px) {
+    height: 120px;
+
     .item-social-media {
+      img {
+        width: 100%;
+        max-width: 20px;
+      }
+
       span {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

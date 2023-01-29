@@ -7,17 +7,16 @@ import { Animation, HowWorkContainer, HowWorkInfo } from './HowWork.styles';
 
 export function HowWork() {
   return (
-    <Animation id="howwork" data-aos="fade-up">
-      <HowWorkContainer className="hero">
+    <Animation id="howwork">
+      <HowWorkContainer className="hero" data-aos="fade-up">
         <HowWorkInfo>
-          <h1>Como funciona?</h1>
+          <h1>Como funciona</h1>
 
           <p>
             “Para mim, a organização traz economia de tempo, muito mais
             qualidade de vida e mais funcionalidade com respeito à
             individualidade de cada um e de cada casa. Por isso, sempre falo que
-            a organização é personalizada! A organização traz mais praticidade e
-            bem-estar no nosso dia-a-dia.” (Lilian Azevedo){' '}
+            a organização é personalizada!” (Lílian Azevedo){' '}
           </p>
 
           <div className="topics">

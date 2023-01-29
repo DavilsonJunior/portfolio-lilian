@@ -3,18 +3,19 @@ import theme from '../../styles/theme';
 
 export const Animation = styled.div`
   /* padding: 1em; */
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  margin: 0;
 `;
 
 export const HeroContainer = styled.section`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
-  padding: 20px;
+  padding: 0 20px;
 
   max-width: 1500px;
-  height: 500px;
+  height: 400px;
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -26,7 +27,7 @@ export const HeroContainer = styled.section`
 `;
 
 export const HeroInfo = styled.div`
-  margin-top: 70px;
+  /* width: 700px; */
 
   h1 {
     color: ${theme.colors.primaryText};
@@ -60,7 +61,7 @@ export const HeroInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 
     h1 {
       font-size: 36px;
@@ -90,7 +91,8 @@ export const HeroInfo = styled.div`
 
   @media (max-width: ${theme.breakpoints.md}) {
     text-align: center;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    margin-bottom: 20px;
 
     h1 {
       margin: auto;
@@ -156,6 +158,8 @@ export const HeroImage = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
+    margin-top: 2.5rem;
+
     img.image {
       max-width: 700px;
       max-height: 524px;

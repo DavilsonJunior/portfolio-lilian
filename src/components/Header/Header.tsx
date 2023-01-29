@@ -2,18 +2,20 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import { ContainerHeader, Animation } from './Header.styles';
 
 export function Header() {
+  const router = useRouter();
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   return (
     <Animation data-aos="fade-down">
       <ContainerHeader isActiveMenu={isActiveMenu}>
-        <div className="logo">
+        <button onClick={() => router.push('/')} type="button" className="logo">
           <img src="/images/logos/logo.png" alt="Logo" />
-        </div>
+        </button>
         <input
           onClick={() => setIsActiveMenu(!isActiveMenu)}
           id="menu-toggle"

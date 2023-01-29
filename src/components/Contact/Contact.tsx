@@ -14,11 +14,11 @@ export function Contact() {
     <Animation id="contact" data-aos="fade-up">
       <ContactContainer>
         <ContactInfo>
-          <h1>Entre em contato com a gente!</h1>
+          <h1>Entre em contato comigo!</h1>
 
           <p>
-            Entre em contato com a Lilian Azevedo, venha tirar suas dúvidas, e
-            fazer um orçamento.
+            Entre em contato para agendar uma visita técnica e solicitar o
+            orçamento. Será um prazer poder lhe atender!
           </p>
 
           <a
@@ -37,11 +37,11 @@ export function Contact() {
           </div>
           <div className="item-social-media">
             <img src="/images/icons/icon-location.svg" alt="location icon" />
-            <span>R. Amauri Souza, 346</span>
+            <span>São Carlos / SP</span>
           </div>
           <div className="item-social-media">
             <img src="/images/icons/icon-email.svg" alt="email icon" />
-            <span>liliansaazevedo@gmail.com</span>
+            <span>lilianazevedoorganizer@gmail.com</span>
           </div>
         </ContactSocialMedia>
       </ContactContainer>

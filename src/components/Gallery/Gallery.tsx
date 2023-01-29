@@ -13,9 +13,13 @@ export function Gallery() {
     <Animation id="gallery" data-aos="fade-up">
       <GalleryContainer>
         <GalleryInfo>
-          <h1>Galeria</h1>
+          <h1>Fotos</h1>
 
-          <p>Aqui você encontrará alguns dos meus trabalhos...</p>
+          <p>
+            Aqui você encontra alguns dos meus trabalhos. Acesse meu Instagram
+            para ver mais fotos, dicas, ideais de organizações e para conhecer
+            mais o meu trabalho.
+          </p>
         </GalleryInfo>
         <GalleryImages>
           <div className="image active" data-aos="zoom-in">
@@ -29,7 +33,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery" data-aos="zoom-in">
             <Image
-              src="/images/backgrounds/background-services-start.png"
+              src="/images/backgrounds/background-services-start.jpg"
               alt="gallery 2"
               width="350px"
               height="350px"
@@ -37,7 +41,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery" data-aos="zoom-in">
             <Image
-              src="/images/backgrounds/background-services-end.png"
+              src="/images/backgrounds/background-services-end.jpg"
               alt="gallery 3"
               width="350px"
               height="350px"

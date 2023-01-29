@@ -2,18 +2,19 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  margin: 150px 0;
+  /* margin: 150px 0; */
+  margin: 60px 0;
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
 `;
 
@@ -23,7 +24,7 @@ export const GalleryContainer = styled.section`
   align-items: center;
   justify-content: center;
 
-  padding: 20px;
+  padding: 0 20px;
 
   max-width: 1200px;
   margin: auto;

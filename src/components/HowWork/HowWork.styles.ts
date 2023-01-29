@@ -2,18 +2,19 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  margin: 150px 0;
+  /* margin: 150px 0; */
+  margin: 0;
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
 `;
 
@@ -22,16 +23,10 @@ export const HowWorkContainer = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  padding: 20px;
+  padding: 0 20px;
 
   max-width: 1500px;
   margin: auto;
-
-  @media (max-width: ${theme.breakpoints.md}) {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-  }
 `;
 
 export const HowWorkInfo = styled.div`
@@ -42,7 +37,7 @@ export const HowWorkInfo = styled.div`
   }
 
   .topics {
-    margin-top: 40px;
+    margin-top: 30px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -113,6 +108,7 @@ export const HowWorkInfo = styled.div`
     p {
       font-size: 16px;
       margin: 22px 0;
+      text-align: center;
     }
 
     .content strong {

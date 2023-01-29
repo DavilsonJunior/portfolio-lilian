@@ -30,7 +30,7 @@ export function ServicesPlusStart() {
         <ServicesPlusStartImage>
           <img
             className="image"
-            src="/images/backgrounds/background-services-start.png"
+            src="/images/backgrounds/background-services-start.jpg"
             alt="background hero"
           />
         </ServicesPlusStartImage>

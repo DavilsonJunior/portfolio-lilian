@@ -28,15 +28,15 @@ export function About() {
           </p>
           <p>
             Além do curso de Personal Organizer, tenho especializações, também
-            pela OZ! Organize sua Vida, em Treinamento de empregadas,
-            Organização de Mudanças Residenciais, Organização de Home Offices e
-            Organização Baby.
+            pela OZ! Organize sua Vida, em Treinamento de empregadas, em
+            Organização de Mudanças Residenciais, em Organização de Home Offices
+            e em Organização Baby.
           </p>
           <p>
             Tenho usado minha paixão pela organização, meus conhecimentos e
             minhas habilidades como Personal Organizer certificada para
             organizar ambientes de maneira a facilitar a vida das pessoas e
-            melhorar a sua qualidade de vida
+            melhorar a sua qualidade de vida.
           </p>
           <p>
             Meus serviços estão disponíveis na região do estado de São Paulo,

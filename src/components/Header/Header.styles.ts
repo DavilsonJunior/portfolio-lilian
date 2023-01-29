@@ -19,9 +19,9 @@ export const ContainerHeader = styled.header<MenuProps>`
 
   border-bottom: 2px solid ${theme.colors.borderBottom};
 
-  margin-bottom: ${props => (props.isActiveMenu ? 280 : 0)}px;
+  margin-bottom: ${props => (props.isActiveMenu ? 250 : 0)}px;
 
-  div.logo {
+  button.logo {
     display: flex;
     align-items: center;
 

@@ -2,30 +2,31 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  margin: 150px 0;
+  /* margin: 150px 0; */
+  margin: 0;
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    margin: 0px 0px;
+    margin: 20px 0;
     padding: 0;
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin: 90px 0;
+    /* margin: 90px 0; */
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    margin: 30px 0;
+    /* margin: 30px 0; */
   }
 `;
 
 export const ServicesContainer = styled.section`
   max-width: 1500px;
   margin: auto;
-  padding: 1.25rem;
+  padding: 0 1.25rem;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
@@ -50,7 +51,7 @@ export const ServicesInfo = styled.div`
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    margin: 28px 0;
+    margin: 1.375rem 0;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -127,7 +128,7 @@ export const ServicesExperian = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 
-  margin-top: 3.125rem;
+  margin-top: 0px;
 
   .card {
     -webkit-box-shadow: 1px 1px 5px -2px #000000;
@@ -138,12 +139,6 @@ export const ServicesExperian = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    transition: transform 400ms ease;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
 
     span {
       font-weight: bold;
@@ -158,20 +153,13 @@ export const ServicesExperian = styled.div`
       font-size: 14px;
       color: ${theme.colors.infoText};
       font-family: 'DM Sans', sans-serif;
+      text-align: center;
     }
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 2.5rem;
-
-    span {
-      text-align: center;
-    }
-
-    p {
-      text-align: center;
-    }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {

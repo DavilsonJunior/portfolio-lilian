@@ -17,7 +17,7 @@ export function ServicesPlusEnd() {
         <ServicesPlusEndImage>
           <img
             className="image"
-            src="/images/backgrounds/background-services-end.png"
+            src="/images/backgrounds/background-services-end.jpg"
             alt="background hero"
           />
         </ServicesPlusEndImage>

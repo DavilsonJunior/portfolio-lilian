@@ -37,12 +37,14 @@ export const HowWorkContainer = styled.div`
     }
 
     p {
-      color: ${theme.colors.infoText};
+      color: ${theme.colors.infoTextSecondary};
       font-family: 'DM Sans', sans-serif;
       font-size: 0.875rem;
       font-weight: 400;
+      margin: 0;
       margin-top: 8px;
       font-style: normal;
+      text-align: justify;
     }
   }
 

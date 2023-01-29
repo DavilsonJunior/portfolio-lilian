@@ -52,6 +52,13 @@ export default class MyDocument extends Document {
 
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <noscript>
+            <style>
+              {
+                '[data-aos] { opacity: 1 !important; transform: none !important; }'
+              }
+            </style>
+          </noscript>
         </Head>
         <body>
           <Main />
