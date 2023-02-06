@@ -183,7 +183,7 @@ export const ServicesInfoTitle = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    margin-bottom: 0rem;
+    margin-bottom: 0.625rem;
     h1 {
       font-size: 36px;
       max-width: 520px;
