@@ -16,10 +16,12 @@ export function Services() {
       <ServicesContainer className="hero">
         <ServicesInfoTitle>
           <h1>Serviços que ofereço</h1>
+          <p className="subtitle">Organização personalizada da sua casa</p>
         </ServicesInfoTitle>
 
         <ServicesInfo data-aos="fade-up">
           {/* <h1>Serviços que ofereço</h1> */}
+
           <div className="services-item">
             <img
               src="/images/icons/icon-arrow-right-circle.svg"
