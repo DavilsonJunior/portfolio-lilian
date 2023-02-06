@@ -15,6 +15,9 @@ export default createGlobalStyle`
     font: 400 16px Roleway, sans-serif;
   }
 
+  html, body {
+    scroll-behavior: smooth;
+  }
 
   input, button {
     font-family: 'DM Sans', sans-serif;

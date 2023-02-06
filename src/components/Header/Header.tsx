@@ -26,7 +26,7 @@ export function Header() {
         </label>
         <ul className="menu">
           <li>
-            <a href="#hero">Início</a>
+            <a href="/">Início</a>
           </li>
           <li>
             <a href="#services">Serviços</a>

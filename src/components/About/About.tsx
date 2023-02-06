@@ -4,12 +4,17 @@ import {
   Animation,
   AboutContainer,
   AboutInfo,
-  AboutImage
+  AboutImage,
+  AboutInfoTitle
 } from './About.styles';
 
 export function About() {
   return (
     <Animation id="about" data-aos="fade-right">
+      <AboutInfoTitle>
+        <h1>Sobre mim</h1>
+      </AboutInfoTitle>
+
       <AboutContainer className="hero">
         <AboutImage>
           <img
@@ -19,7 +24,6 @@ export function About() {
           />
         </AboutImage>
         <AboutInfo>
-          <h1>Sobre mim</h1>
           <p>
             Sou Lílian Azevedo, Personal Organizer formada pela OZ! Organize sua
             Vida, que é a empresa pioneira no setor de formação de profissionais

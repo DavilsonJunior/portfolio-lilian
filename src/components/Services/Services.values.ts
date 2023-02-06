@@ -10,7 +10,7 @@ export const services = [
     icon: '/images/icons/icon-bedroom.svg',
     title: 'Quarto e closet',
     description:
-      'Organização de closets femininos, masculinos, infantis e cama baú – incluindo rouparia, sapatos, jóias, bijuterias, maquiagens, óculos e bolsas.'
+      'Organização de closets femininos, masculinos, infantis e cama baú – incluindo rouparia, sapatos e itens pessoais.'
   },
   {
     id: 3,

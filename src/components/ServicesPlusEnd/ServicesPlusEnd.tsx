@@ -12,12 +12,12 @@ import {
 
 export function ServicesPlusEnd() {
   return (
-    <Animation id="about" data-aos="fade-up">
+    <Animation id="services" data-aos="fade-up">
       <ServicesPlusEndContainer className="hero">
         <ServicesPlusEndImage>
           <img
             className="image"
-            src="/images/backgrounds/background-services-end.jpg"
+            src="/images/backgrounds/background-services-end.jpeg"
             alt="background hero"
           />
         </ServicesPlusEndImage>

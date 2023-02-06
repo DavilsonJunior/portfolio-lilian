@@ -5,15 +5,19 @@ import {
   GalleryContainer,
   Animation,
   GalleryInfo,
-  GalleryImages
+  GalleryImages,
+  GalleryInfoTitle
 } from './Gallery.styles';
 
 export function Gallery() {
   return (
     <Animation id="gallery" data-aos="fade-up">
       <GalleryContainer>
-        <GalleryInfo>
+        <GalleryInfoTitle>
           <h1>Fotos</h1>
+        </GalleryInfoTitle>
+        <GalleryInfo>
+          {/* <h1>Fotos</h1> */}
 
           <p>
             Aqui você encontra alguns dos meus trabalhos. Acesse meu Instagram
@@ -24,7 +28,7 @@ export function Gallery() {
         <GalleryImages>
           <div className="image active" data-aos="zoom-in">
             <Image
-              src="/images/backgrounds/background-gallery-image-1.jpg"
+              src="/images/backgrounds/background-services-start.jpeg"
               alt="gallery 1"
               width="450px"
               height="408px"
@@ -33,7 +37,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery" data-aos="zoom-in">
             <Image
-              src="/images/backgrounds/background-services-start.jpg"
+              src="/images/gallery/gallery-4.jpg"
               alt="gallery 2"
               width="350px"
               height="350px"
@@ -41,7 +45,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery" data-aos="zoom-in">
             <Image
-              src="/images/backgrounds/background-services-end.jpg"
+              src="/images/backgrounds/background-services-end.jpeg"
               alt="gallery 3"
               width="350px"
               height="350px"

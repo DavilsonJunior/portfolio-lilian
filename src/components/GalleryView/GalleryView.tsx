@@ -19,7 +19,7 @@ export function GalleryView() {
           <div className="item-galeria w-2 h-2">
             <img
               className="img-galeria"
-              src="/images/backgrounds/background-services-start.jpg"
+              src="/images/backgrounds/background-services-start.jpeg"
               alt="gallery 1"
             />
           </div>
@@ -397,6 +397,134 @@ export function GalleryView() {
               className="img-galeria"
               src="/images/gallery/gallery-53.jpg"
               alt="gallery 53"
+            />
+          </div>
+
+          <div className="item-galeria w-2 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-54.jpg"
+              alt="gallery 54"
+            />
+          </div>
+          <div className="item-galeria w-2 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-55.jpg"
+              alt="gallery 55"
+            />
+          </div>
+          <div className="item-galeria w-1 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-56.jpg"
+              alt="gallery 56"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-57.jpg"
+              alt="gallery 57"
+            />
+          </div>
+          <div className="item-galeria w-2 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-58.jpg"
+              alt="gallery 58"
+            />
+          </div>
+          <div className="item-galeria  w-1 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-59.jpg"
+              alt="gallery 59"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-60.jpg"
+              alt="gallery 60"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-61.jpg"
+              alt="gallery 61"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-62.jpg"
+              alt="gallery 62"
+            />
+          </div>
+
+          <div className="item-galeria w-2 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-63.jpg"
+              alt="gallery 63"
+            />
+          </div>
+          <div className="item-galeria w-2 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-64.jpg"
+              alt="gallery 64"
+            />
+          </div>
+          <div className="item-galeria w-1 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-65.jpg"
+              alt="gallery 65"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-66.jpg"
+              alt="gallery 66"
+            />
+          </div>
+          <div className="item-galeria w-2 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-67.jpg"
+              alt="gallery 67"
+            />
+          </div>
+          <div className="item-galeria  w-1 h-2">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-68.jpg"
+              alt="gallery 68"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-69.jpg"
+              alt="gallery 69"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-70.jpg"
+              alt="gallery 70"
+            />
+          </div>
+          <div className="item-galeria w-1 h-1">
+            <img
+              className="img-galeria"
+              src="/images/gallery/gallery-37.jpg"
+              alt="gallery 37"
             />
           </div>
         </GalleryViewImagesContainer>

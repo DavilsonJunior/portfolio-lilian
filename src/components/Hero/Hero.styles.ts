@@ -38,6 +38,7 @@ export const HeroInfo = styled.div`
     font-size: 40px;
     font-weight: 700;
     max-width: 550px;
+    text-align: justify;
   }
 
   h2 {
@@ -47,6 +48,7 @@ export const HeroInfo = styled.div`
     font-weight: 400;
     margin: 28px 0;
     max-width: 600px;
+    text-align: justify;
   }
 
   button {

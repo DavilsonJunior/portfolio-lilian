@@ -19,13 +19,23 @@ export const Animation = styled.div`
 `;
 
 export const ServicesPlusStartContainer = styled.section`
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 0 20px;
 
   max-width: 1500px;
+  margin: auto; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  padding: 0 20px;
+
+  max-width: 1500px;
+  /* height: 400px; */
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -42,10 +52,11 @@ export const ServicesPlusStartInfo = styled.div`
     color: ${theme.colors.primaryText};
     font-size: 44px;
     font-weight: 700;
+    text-align: center;
   }
 
   .topics {
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   p {
@@ -127,20 +138,84 @@ export const ServicesPlusStartInfo = styled.div`
   }
 `;
 
+export const ServicesPlusStartInfoTitle = styled.div`
+  max-width: 680px;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+
+  h1 {
+    color: ${theme.colors.primaryText};
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    max-width: 610px;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    max-width: 550px;
+    margin-bottom: 1.2rem;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+    h1 {
+      margin: auto;
+      font-size: 40px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    margin-bottom: 0rem;
+    h1 {
+      font-size: 36px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    h1 {
+      font-size: 30px;
+      max-width: 350px;
+      text-align: center;
+    }
+  }
+`;
+
 export const ServicesPlusStartImage = styled.div`
-  height: 405px;
+  /* height: 405px; */
   padding: 0 30px;
 
   img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 600px;
+    max-height: 600px;
     box-shadow: 2rem -2rem ${theme.colors.boxShadowPurple};
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
     img {
-      max-width: 400px;
-      max-height: 400px;
+      max-width: 500px;
+      max-height: 500px;
     }
   }
 

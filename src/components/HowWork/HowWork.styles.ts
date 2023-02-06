@@ -34,10 +34,11 @@ export const HowWorkInfo = styled.div`
     color: ${theme.colors.primaryText};
     font-size: 44px;
     font-weight: 700;
+    text-align: center;
   }
 
   .topics {
-    margin-top: 30px;
+    /* margin-top: 30px; */
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -125,6 +126,70 @@ export const HowWorkInfo = styled.div`
     h2 {
       font-size: 16px;
       margin: 16px 0;
+    }
+  }
+`;
+
+export const HowWorkInfoTitle = styled.div`
+  max-width: 680px;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+
+  h1 {
+    color: ${theme.colors.primaryText};
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    max-width: 610px;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    max-width: 550px;
+    margin-bottom: 1.2rem;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+    h1 {
+      margin: auto;
+      font-size: 40px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    margin-bottom: 0rem;
+    h1 {
+      font-size: 36px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    h1 {
+      font-size: 30px;
+      max-width: 350px;
+      text-align: center;
     }
   }
 `;

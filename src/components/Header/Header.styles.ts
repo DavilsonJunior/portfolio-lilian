@@ -2,7 +2,12 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 import { MenuProps } from './Header.types';
 
-export const Animation = styled.div``;
+export const Animation = styled.div`
+  /* position: sticky;
+  top: 0; */
+  z-index: 999;
+  background-color: ${theme.colors.background};
+`;
 
 export const ContainerHeader = styled.header<MenuProps>`
   display: flex;

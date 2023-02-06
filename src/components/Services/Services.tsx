@@ -5,7 +5,8 @@ import {
   Animation,
   ServicesContainer,
   ServicesInfo,
-  ServicesExperian
+  ServicesExperian,
+  ServicesInfoTitle
 } from './Services.styles';
 import { services } from './Services.values';
 
@@ -13,17 +14,27 @@ export function Services() {
   return (
     <Animation id="services">
       <ServicesContainer className="hero">
-        <ServicesInfo data-aos="fade-up">
+        <ServicesInfoTitle>
           <h1>Serviços que ofereço</h1>
-          <p>
-            Cada organização é única e planejada para funcionar de forma prática
-            para você e toda a sua família. Esta organização pode ser feita no
-            closet, cozinha, louceiro, banheiro, sala e onde mais precisar. O
-            essencial é que participo da organização do início ao fim,
-            auxiliando na triagem e descarte adequados, a realocação de cada
-            peça, acessório ou objeto, e, também, treino sua funcionária para
-            que a organização se mantenha.
-          </p>
+        </ServicesInfoTitle>
+
+        <ServicesInfo data-aos="fade-up">
+          {/* <h1>Serviços que ofereço</h1> */}
+          <div className="services-item">
+            <img
+              src="/images/icons/icon-arrow-right-circle.svg"
+              alt="arrow circle icon"
+            />
+            <p>
+              Cada organização é única e planejada para funcionar de forma
+              prática para você e toda a sua família. Esta organização pode ser
+              feita no closet, cozinha, louceiro, banheiro, sala e onde mais
+              precisar. O essencial é que participo da organização do início ao
+              fim, auxiliando na triagem e descarte adequados, a realocação de
+              cada peça, acessório ou objeto, e, também, treino sua funcionária
+              para que a organização se mantenha.
+            </p>
+          </div>
         </ServicesInfo>
         <ServicesExperian>
           {services.map(service => (

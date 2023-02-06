@@ -19,13 +19,23 @@ export const Animation = styled.div`
 `;
 
 export const ServicesPlusEndContainer = styled.section`
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 0 20px;
 
   max-width: 1500px;
+  margin: auto; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  padding: 0 20px;
+
+  max-width: 1500px;
+  /* height: 400px; */
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -42,10 +52,11 @@ export const ServicesPlusEndInfo = styled.div`
     color: ${theme.colors.primaryText};
     font-size: 44px;
     font-weight: 700;
+    text-align: center;
   }
 
   .topics {
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
 
   p {
@@ -128,19 +139,19 @@ export const ServicesPlusEndInfo = styled.div`
 `;
 
 export const ServicesPlusEndImage = styled.div`
-  height: 405px;
+  /* height: 405px; */
   padding: 0 30px;
 
   img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 600px;
+    max-height: 600px;
     box-shadow: -2rem -2rem ${theme.colors.boxShadowPurple};
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
     img {
-      max-width: 400px;
-      max-height: 400px;
+      max-width: 500px;
+      max-height: 500px;
     }
   }
 

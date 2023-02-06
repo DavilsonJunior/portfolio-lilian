@@ -3,6 +3,7 @@ import theme from '../../styles/theme';
 
 export const Animation = styled.div`
   /* margin: 150px 0; */
+  /* margin: 60px 0; */
   margin: 60px 0;
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
@@ -101,8 +102,10 @@ export const GalleryInfo = styled.div`
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    margin: 28px 0;
+    /* margin: 28px 0; */
+    margin-bottom: 20px;
     max-width: 740px;
+    text-align: center;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -122,13 +125,13 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 14px;
-      margin: 22px 0;
+      /* margin: 22px 0; */
     }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
     max-width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
     h1 {
       font-size: 40px;
@@ -137,7 +140,8 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 20px;
-      margin: 22px 0;
+      text-align: justify;
+      /* margin: 22px 0; */
     }
   }
 
@@ -150,7 +154,7 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 16px;
-      margin: 22px 0;
+      /* margin: 22px 0; */
     }
 
     .content strong {
@@ -166,11 +170,80 @@ export const GalleryInfo = styled.div`
   }
 `;
 
-export const GalleryImages = styled.div`
+export const GalleryInfoTitle = styled.div`
+  max-width: 680px;
+
   display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+
+  h1 {
+    color: ${theme.colors.primaryText};
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    max-width: 610px;
+    margin-bottom: 2.5rem;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+    max-width: 550px;
+    margin-bottom: 1.2rem;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+    h1 {
+      margin: auto;
+      font-size: 40px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    margin-bottom: 0rem;
+    h1 {
+      font-size: 36px;
+      max-width: 520px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    h1 {
+      font-size: 30px;
+      max-width: 350px;
+      text-align: center;
+    }
+  }
+`;
+
+export const GalleryImages = styled.div`
+  /* display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 20px;
+  gap: 1rem; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  /* margin-top: 20px; */
 
   .image-gallery {
     max-width: 350px;
@@ -183,13 +256,13 @@ export const GalleryImages = styled.div`
     position: relative;
 
     & > div > img {
-      border-radius: 20px;
+      /* border-radius: 20px; */
     }
 
     & > .image-opacity {
       position: absolute;
       background-color: ${theme.colors.primaryText};
-      border-radius: 20px;
+      /* border-radius: 20px; */
       opacity: 0;
       z-index: 10;
       top: 0;
@@ -210,7 +283,7 @@ export const GalleryImages = styled.div`
         justify-content: center;
 
         &::after {
-          content: '15+';
+          content: '71+';
           font-size: 42px;
           font-weight: bold;
           font-family: 'Poppins', sans-serif;
@@ -231,7 +304,7 @@ export const GalleryImages = styled.div`
         height: 99%;
 
         &::after {
-          content: '15+';
+          content: '71+';
           font-size: 42px;
           font-weight: bold;
           font-family: 'Poppins', sans-serif;
@@ -242,7 +315,12 @@ export const GalleryImages = styled.div`
   }
 
   @media (max-width: 800px) {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
 
     & > .active .image-opacity {
       height: 100%;

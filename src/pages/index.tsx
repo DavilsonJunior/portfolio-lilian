@@ -16,7 +16,11 @@ import { Footer } from '../components/Footer/Footer';
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1500
+      duration: 400
+    });
+
+    document.addEventListener('scroll', e => {
+      console.log(e.target);
     });
   }, []);
 

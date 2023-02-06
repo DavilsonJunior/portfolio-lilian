@@ -7,15 +7,19 @@ import {
   Animation,
   ServicesPlusStartContainer,
   ServicesPlusStartInfo,
-  ServicesPlusStartImage
+  ServicesPlusStartImage,
+  ServicesPlusStartInfoTitle
 } from './ServicesPlusStart.styles';
 
 export function ServicesPlusStart() {
   return (
-    <Animation id="about" data-aos="fade-up">
+    <Animation id="services" data-aos="fade-up">
+      <ServicesPlusStartInfoTitle>
+        <h1>Outros serviços que ofereço</h1>
+      </ServicesPlusStartInfoTitle>
       <ServicesPlusStartContainer className="hero">
         <ServicesPlusStartInfo>
-          <h1>Um pouco mais sobre meu trabalho!</h1>
+          {/* <h1>Outros serviços que ofereço</h1> */}
 
           <div className="topics">
             {services.map(service => (
@@ -30,7 +34,7 @@ export function ServicesPlusStart() {
         <ServicesPlusStartImage>
           <img
             className="image"
-            src="/images/backgrounds/background-services-start.jpg"
+            src="/images/backgrounds/background-services-start.jpeg"
             alt="background hero"
           />
         </ServicesPlusStartImage>
