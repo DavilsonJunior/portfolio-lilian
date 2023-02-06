@@ -31,7 +31,7 @@ export const ServicesContainer = styled.section`
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 `;
 
@@ -39,6 +39,7 @@ export const ServicesInfo = styled.div`
   /* max-width: 783px; */
   text-align: center;
   margin: auto;
+  margin: 22px 0;
 
   h1 {
     color: ${theme.colors.primaryText};
@@ -48,20 +49,28 @@ export const ServicesInfo = styled.div`
 
   .services-item {
     display: flex;
-    align-items: flex-start;
-    /* margin: 22px 0; */
-    margin-bottom: 22px;
+    justify-content: flex-start;
+    /* align-items: center; */
 
     img {
       width: 24px;
       height: 24px;
       margin-right: 1rem;
     }
+
+    strong {
+      font-size: 1.5rem;
+      line-height: 24px;
+      font-weight: 500;
+      color: ${theme.colors.primaryText};
+      font-family: 'DM Sans', sans-serif;
+      text-align: justify;
+    }
   }
 
-  .subtitle {
+  /* .subtitle {
     text-align: center;
-  }
+  } */
 
   p {
     color: ${theme.colors.infoText};
@@ -98,6 +107,7 @@ export const ServicesInfo = styled.div`
   @media (max-width: ${theme.breakpoints.md}) {
     /* text-align: center; */
     max-width: 100%;
+    margin: 10px 0;
 
     h1 {
       margin: auto;
@@ -137,6 +147,12 @@ export const ServicesInfo = styled.div`
       font-size: 16px;
       margin: 16px 0;
     }
+
+    .services-item {
+      strong {
+        line-height: 20px;
+      }
+    }
   }
 `;
 
@@ -154,15 +170,6 @@ export const ServicesInfoTitle = styled.div`
     font-size: 44px;
     font-weight: 700;
     text-align: center;
-  }
-
-  p {
-    color: ${theme.colors.infoText};
-    font-size: 18px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 20px;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {

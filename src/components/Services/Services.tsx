@@ -16,7 +16,6 @@ export function Services() {
       <ServicesContainer className="hero">
         <ServicesInfoTitle>
           <h1>Serviços que ofereço</h1>
-          <p className="subtitle">Organização personalizada da sua casa</p>
         </ServicesInfoTitle>
 
         <ServicesInfo data-aos="fade-up">
@@ -27,16 +26,21 @@ export function Services() {
               src="/images/icons/icon-arrow-right-circle.svg"
               alt="arrow circle icon"
             />
-            <p>
-              Cada organização é única e planejada para funcionar de forma
-              prática para você e toda a sua família. Esta organização pode ser
-              feita no closet, cozinha, louceiro, banheiro, sala e onde mais
-              precisar. O essencial é que participo da organização do início ao
-              fim, auxiliando na triagem e descarte adequados, a realocação de
-              cada peça, acessório ou objeto, e, também, treino sua funcionária
-              para que a organização se mantenha.
-            </p>
+            <strong className="subtitle">
+              Organização personalizada da sua casa
+            </strong>
           </div>
+        </ServicesInfo>
+        <ServicesInfo data-aos="fade-up">
+          <p>
+            Cada organização é única e planejada para funcionar de forma prática
+            para você e toda a sua família. Esta organização pode ser feita no
+            closet, cozinha, louceiro, banheiro, sala e onde mais precisar. O
+            essencial é que participo da organização do início ao fim,
+            auxiliando na triagem e descarte adequados, a realocação de cada
+            peça, acessório ou objeto, e, também, treino sua funcionária para
+            que a organização se mantenha.
+          </p>
         </ServicesInfo>
         <ServicesExperian>
           {services.map(service => (
