@@ -10,12 +10,13 @@ import {
 } from './Footer.styles';
 
 export function Footer() {
-  // function handleScrollTop() {
-  //   window.scroll({
-  //     top: 0,
-  //     behavior: 'smooth'
-  //   });
-  // }
+  const handleScrollTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <Animation>
       <FooterContainer>
@@ -24,12 +25,14 @@ export function Footer() {
           <p>Todos os direitos reservados.</p>
         </FooterInfo>
         <FooterLogo>
-          <Image
-            src="/images/logos/logo-footer.svg"
-            alt="logo footer Lilian"
-            width="340px"
-            height="139px"
-          />
+          <button type="button" onClick={handleScrollTop}>
+            <Image
+              src="/images/logos/logo-footer.svg"
+              alt="logo footer Lilian"
+              width="340px"
+              height="139px"
+            />
+          </button>
         </FooterLogo>
         <FooterSocialMedia>
           <a
@@ -56,9 +59,6 @@ export function Footer() {
             <FaWhatsapp />
           </a>
         </FooterSocialMedia>
-        {/* <button onClick={handleScrollTop} type="button">
-        <ArrowCircleUp size={36} color={theme.colors.secondary} weight="fill" />
-      </button> */}
       </FooterContainer>
     </Animation>
   );
