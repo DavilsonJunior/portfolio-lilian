@@ -17,7 +17,15 @@ export function Hero() {
             diferença na organização da sua casa, melhorando o seu dia-a-dia
             através do bom aproveitamento dos espaços físicos de sua casa.
           </h2>
-          <button type="button">Entre em contato</button>
+          <button type="button">
+            <a
+              href="https://api.whatsapp.com/send?phone=5516996469902"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Entre em contato
+            </a>
+          </button>
         </HeroInfo>
         <HeroImage>
           <img

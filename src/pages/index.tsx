@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -26,6 +27,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Lílian Azevedo</title>
+      </Head>
       <Header />
       <main>
         <Hero />

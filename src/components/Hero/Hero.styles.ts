@@ -51,7 +51,7 @@ export const HeroInfo = styled.div`
     text-align: justify;
   }
 
-  button {
+  button a {
     background-color: ${theme.colors.primary};
     color: ${theme.colors.buttonText};
     font-size: 16px;
