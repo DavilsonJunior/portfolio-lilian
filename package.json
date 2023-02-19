@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "git-commit-msg-linter": "^4.7.3",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "phosphor-react": "^1.4.1",

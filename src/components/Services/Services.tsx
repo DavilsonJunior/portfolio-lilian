@@ -32,7 +32,7 @@ export function Services() {
           </div>
         </ServicesInfo>
         <ServicesInfo data-aos="fade-up">
-          <p>
+          {/* <p>
             Cada organização é única e planejada para funcionar de forma prática
             para você e toda a sua família. Esta organização pode ser feita no
             closet, cozinha, louceiro, banheiro, sala e onde mais precisar. O
@@ -40,6 +40,12 @@ export function Services() {
             auxiliando na triagem e descarte adequados, a realocação de cada
             peça, acessório ou objeto, e, também, treino sua funcionária para
             que a organização se mantenha.
+          </p> */}
+          <p>
+            “Para mim, a organização traz economia de tempo, muito mais
+            qualidade de vida e mais funcionalidade com respeito à
+            individualidade de cada um e de cada casa. Por isso, sempre falo que
+            a organização é personalizada!” Lílian Azevedo.
           </p>
         </ServicesInfo>
         <ServicesExperian>
