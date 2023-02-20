@@ -3,15 +3,15 @@ import theme from '../../styles/theme';
 
 export const Animation = styled.div`
   /* margin: 150px 0; */
-  margin: 3rem 0;
+  margin: 5rem 0;
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    margin: 3rem 0;
+    margin: 5rem 0;
     padding: 0;
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    margin: 1rem 0;
+    margin: 40px 0;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
@@ -31,15 +31,12 @@ export const ServicesContainer = styled.section`
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
   }
 `;
 
 export const ServicesInfo = styled.div`
-  /* max-width: 783px; */
-  text-align: center;
   margin: auto;
-  margin: 22px 0;
+  margin: 8px 0px 16px;
 
   h1 {
     color: ${theme.colors.primaryText};
@@ -50,7 +47,6 @@ export const ServicesInfo = styled.div`
   .services-item {
     display: flex;
     justify-content: flex-start;
-    /* align-items: center; */
 
     img {
       width: 24px;
@@ -63,49 +59,36 @@ export const ServicesInfo = styled.div`
       line-height: 24px;
       font-weight: 500;
       color: ${theme.colors.primaryText};
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Poppins', sans-serif;
       text-align: justify;
     }
   }
 
-  /* .subtitle {
-    text-align: center;
-  } */
-
   p {
     color: ${theme.colors.infoText};
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     text-align: justify;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    /* max-width: 610px; */
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
 
     p {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* max-width: 550px; */
-
     h1 {
-      font-size: 32px;
-    }
-
-    p {
-      font-size: 14px;
-      /* margin: 22px 0; */
+      font-size: 2rem;
     }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
-    /* text-align: center; */
     max-width: 100%;
     margin: 10px 0;
 
@@ -116,41 +99,117 @@ export const ServicesInfo = styled.div`
     }
 
     p {
-      font-size: 20px;
-      /* margin: 22px 0; */
+      line-height: 24px;
       text-align: justify;
     }
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
       max-width: 520px;
       text-align: center;
     }
 
     p {
-      font-size: 16px;
-      /* margin: 22px 0; */
+      font-size: 1rem;
       text-align: justify;
     }
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
     h1 {
-      font-size: 30px;
+      font-size: 1.875rem;
       max-width: 350px;
       text-align: center;
     }
 
-    h2 {
-      font-size: 16px;
-      margin: 16px 0;
+    .services-item {
+      strong {
+        line-height: 24px;
+      }
+    }
+  }
+`;
+
+export const ServicesContent = styled.div``;
+
+export const ServicesClientInfo = styled.div`
+  /* max-width: 783px; */
+  /* text-align: center; */
+  margin: 8px 0px 16px;
+
+  display: flex;
+  align-items: center;
+
+  p {
+    color: ${theme.colors.infoText};
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .client-info {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: ${theme.colors.boxShadowPurple};
+    color: ${theme.colors.infoTextSecondary};
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 40px;
+  }
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    max-width: 100%;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    p {
+      line-height: 24px;
+      text-align: justify;
+    }
+
+    .client-info {
+      margin-left: 0px;
+      margin-top: 1.25rem;
+      padding: 1rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.xs}) {
+    h1 {
+      font-size: 1.875rem;
+      max-width: 350px;
+      text-align: center;
     }
 
     .services-item {
       strong {
-        line-height: 20px;
+        line-height: 24px;
       }
     }
   }
@@ -177,11 +236,11 @@ export const ServicesInfoTitle = styled.div`
     margin-bottom: 2.5rem;
 
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
 
     p {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 
@@ -190,11 +249,11 @@ export const ServicesInfoTitle = styled.div`
     margin-bottom: 1.2rem;
 
     h1 {
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
 
@@ -219,7 +278,7 @@ export const ServicesInfoTitle = styled.div`
   @media (max-width: ${theme.breakpoints.sm}) {
     margin-bottom: 0.625rem;
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
       max-width: 520px;
       text-align: center;
     }
@@ -232,7 +291,7 @@ export const ServicesInfoTitle = styled.div`
 
   @media (max-width: ${theme.breakpoints.xs}) {
     h1 {
-      font-size: 30px;
+      font-size: 1.875rem;
       max-width: 350px;
       text-align: center;
     }

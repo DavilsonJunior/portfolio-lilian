@@ -58,7 +58,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     a:hover {
       color: ${theme.colors.primary};
       font-weight: 500;
-      border-bottom: 2px solid ${theme.colors.primary};
+      /* border-bottom: 2px solid ${theme.colors.primary}; */
     }
   }
 
@@ -139,12 +139,21 @@ export const ContainerHeader = styled.header<MenuProps>`
     #menu-toggle:checked ~ .menu li {
       border: 1px solid ${theme.colors.borderHeader};
       height: 2.5em;
-      padding: 0.5em;
+      /* padding: 0.5em; */
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     #menu-toggle:checked ~ .menu li > a {
       display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #menu-toggle:checked ~ .menu li:last-of-type {

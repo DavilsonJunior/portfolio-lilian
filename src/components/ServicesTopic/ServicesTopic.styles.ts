@@ -20,7 +20,7 @@ export const ServicesTopicsContainer = styled.div`
 
     strong {
       font-size: 1.5rem;
-      line-height: 24px;
+      line-height: 1.5rem;
       font-weight: 500;
       color: ${theme.colors.primaryText};
     }
@@ -31,17 +31,6 @@ export const ServicesTopicsContainer = styled.div`
       font-weight: 400;
       color: ${theme.colors.infoText};
       margin: 8px 0 16px;
-    }
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    img {
-      width: 18px;
-      height: 18px;
-    }
-
-    .content strong {
-      line-height: 20px;
     }
   }
 `;

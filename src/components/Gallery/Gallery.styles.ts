@@ -11,7 +11,7 @@ export const Animation = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    /* margin: 90px 0; */
+    margin: 40px 0;
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
@@ -176,7 +176,7 @@ export const GalleryInfoTitle = styled.div`
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.2rem;
 
   h1 {
     color: ${theme.colors.primaryText};
@@ -187,7 +187,7 @@ export const GalleryInfoTitle = styled.div`
 
   @media (max-width: ${theme.breakpoints.lg}) {
     max-width: 610px;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
 
     h1 {
       font-size: 36px;
@@ -251,8 +251,8 @@ export const GalleryImages = styled.div`
   }
 
   .active {
-    width: 450px;
-    max-height: 408px;
+    width: 350px;
+    max-height: 350px;
     position: relative;
 
     & > div > img {
@@ -263,14 +263,26 @@ export const GalleryImages = styled.div`
       position: absolute;
       background-color: ${theme.colors.primaryText};
       /* border-radius: 20px; */
-      opacity: 0;
       z-index: 10;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
 
-      transition: opacity 400ms ease;
+      opacity: 0.6;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '71+';
+        font-size: 42px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        color: ${theme.colors.background};
+      }
     }
 
     &:hover {
@@ -317,13 +329,18 @@ export const GalleryImages = styled.div`
   @media (max-width: 800px) {
     /* flex-direction: column-reverse; */
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center; */
+
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-items: center;
 
     & > .active .image-opacity {
-      height: 100%;
+      /* height: 100%; */
     }
   }
 

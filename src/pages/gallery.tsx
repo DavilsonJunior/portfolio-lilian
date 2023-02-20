@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lílian Azevedo</title>
+        <title>Lílian Azevedo - Personal Organizer</title>
       </Head>
       <Header />
       <main>

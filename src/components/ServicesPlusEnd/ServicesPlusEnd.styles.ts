@@ -10,7 +10,7 @@ export const Animation = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    /* margin: 90px 0; */
+    margin: 40px 0 50px;
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {

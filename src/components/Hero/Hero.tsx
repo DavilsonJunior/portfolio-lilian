@@ -1,5 +1,4 @@
 import React from 'react';
-// import Image from 'next/image';
 
 import { Animation, HeroContainer, HeroInfo, HeroImage } from './Hero.styles';
 
@@ -35,6 +34,9 @@ export function Hero() {
           />
         </HeroImage>
       </HeroContainer>
+      {/* <ButtonToTop>
+        <FaArrowUp />
+      </ButtonToTop> */}
     </Animation>
   );
 }

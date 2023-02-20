@@ -21,7 +21,7 @@ export function Footer() {
     <Animation>
       <FooterContainer>
         <FooterInfo>
-          <p>©{new Date().getFullYear()} Lílian Azevedo Personal Organizer</p>
+          <p>©{new Date().getFullYear()} Lílian Azevedo - Personal Organizer</p>
           <p>Todos os direitos reservados.</p>
         </FooterInfo>
         <FooterLogo>

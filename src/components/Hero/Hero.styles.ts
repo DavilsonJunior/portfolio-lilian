@@ -31,13 +31,13 @@ export const HeroContainer = styled.section`
 `;
 
 export const HeroInfo = styled.div`
-  /* width: 700px; */
+  max-width: 550px;
 
   h1 {
     color: ${theme.colors.primaryText};
     font-size: 40px;
     font-weight: 700;
-    max-width: 550px;
+    /* max-width: 550px; */
     text-align: justify;
   }
 
@@ -47,7 +47,7 @@ export const HeroInfo = styled.div`
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     margin: 28px 0;
-    max-width: 600px;
+    /* max-width: 550px; */
     text-align: justify;
   }
 
@@ -67,31 +67,32 @@ export const HeroInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
-    /* margin-top: 50px; */
+    max-width: 480px;
 
     h1 {
       font-size: 36px;
-      max-width: 450px;
+      /* max-width: 450px; */
     }
 
     h2 {
       font-size: 18px;
-      max-width: 480px;
+      /* max-width: 480px; */
     }
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
     margin-top: 0px;
+    max-width: 430px;
 
     h1 {
       font-size: 32px;
-      max-width: 420px;
+      /* max-width: 420px; */
     }
 
     h2 {
       font-size: 16px;
       margin: 22px 0;
-      max-width: 430px;
+      /* max-width: 430px; */
     }
   }
 
@@ -99,11 +100,12 @@ export const HeroInfo = styled.div`
     text-align: center;
     /* margin-bottom: 60px; */
     margin-bottom: 20px;
+    max-width: 540px;
 
     h1 {
       margin: auto;
       font-size: 40px;
-      max-width: 520px;
+      /* max-width: 520px; */
       text-align: center;
       margin-top: 30px;
     }
@@ -111,35 +113,41 @@ export const HeroInfo = styled.div`
     h2 {
       font-size: 22px;
       margin: 22px 0;
-      max-width: 540px;
+      /* max-width: 540px; */
+    }
+
+    button {
+      margin-top: 20px;
     }
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
+    max-width: 540px;
     h1 {
       font-size: 36px;
-      max-width: 520px;
+      /* max-width: 520px; */
       text-align: center;
     }
 
     h2 {
       font-size: 18px;
       margin: 22px 0;
-      max-width: 540px;
+      /* max-width: 540px; */
     }
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
+    max-width: 400px;
     h1 {
       font-size: 30px;
-      max-width: 350px;
+      /* max-width: 350px; */
       text-align: center;
     }
 
     h2 {
       font-size: 16px;
       margin: 16px 0;
-      max-width: 400px;
+      /* max-width: 400px; */
     }
   }
 `;
@@ -178,3 +186,20 @@ export const HeroImage = styled.div`
     }
   }
 `;
+
+// export const ButtonToTop = styled.button`
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   background-color: ${theme.colors.primary};
+
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+
+//   svg {
+//     color: white;
+//     font-size: 24px;
+//     font-weight: bold;
+//   }
+// `;

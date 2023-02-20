@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 export default createGlobalStyle`
   *{
@@ -51,5 +52,32 @@ export default createGlobalStyle`
   a {
     color:  ${props => props.theme.colors.primaryText};
     text-decoration: none;
+  }
+
+  .button-scroll {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: ${theme.colors.primary};
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    svg {
+      color: ${theme.colors.background};
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .visibility {
+    display: flex;
   }
 `;

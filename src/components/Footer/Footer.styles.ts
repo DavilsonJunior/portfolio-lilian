@@ -31,14 +31,15 @@ export const FooterContainer = styled.section`
   padding: 1.25rem;
 
   max-width: 1500px;
-  height: 237px;
+  /* height: 237px; */
+  height: auto;
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
     gap: 0;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 `;
@@ -46,15 +47,15 @@ export const FooterContainer = styled.section`
 export const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 60px;
-  margin-right: auto;
+  align-items: center;
 
   p {
     color: ${theme.colors.background};
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
+    line-height: 22px;
+    width: fit-content;
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -62,20 +63,23 @@ export const FooterInfo = styled.div`
 
     p {
       text-align: center;
+      line-height: 24px;
     }
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    height: 50px;
+    /* height: 50px; */
 
     p {
-      font-size: 15px;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 `;
 
 export const FooterLogo = styled.div`
   max-width: 350px;
+  margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
     margin: 50px 0;
@@ -85,10 +89,12 @@ export const FooterLogo = styled.div`
 
 export const FooterSocialMedia = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 140px;
-  margin-left: auto;
+  /* width: 140px;
+  margin-left: auto; */
 
   & > a > svg {
     color: ${theme.colors.background};

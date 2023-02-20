@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect } from 'react';
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { FaArrowUp } from 'react-icons/fa';
 import { Header } from '../components/Header/Header';
 import { Hero } from '../components/Hero/Hero';
 import { About } from '../components/About/About';
@@ -20,15 +22,28 @@ export default function Home() {
       duration: 400
     });
 
-    document.addEventListener('scroll', e => {
-      console.log(e.target);
+    document.addEventListener('scroll', _ => {
+      const windowTop = window.pageYOffset;
+      const element = document.querySelector('#buttonScroll');
+      if (windowTop >= 200) {
+        element.classList.add('visibility');
+      } else {
+        element.classList.remove('visibility');
+      }
     });
   }, []);
+
+  const handleScrollTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <>
       <Head>
-        <title>Lílian Azevedo</title>
+        <title>Lílian Azevedo - Personal Organizer</title>
       </Head>
       <Header />
       <main>
@@ -42,6 +57,14 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <button
+        type="button"
+        id="buttonScroll"
+        onClick={handleScrollTop}
+        className="button-scroll"
+      >
+        <FaArrowUp />
+      </button>
     </>
   );
 }

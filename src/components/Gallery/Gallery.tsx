@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import {
   GalleryContainer,
@@ -10,6 +13,8 @@ import {
 } from './Gallery.styles';
 
 export function Gallery() {
+  const router = useRouter();
+
   return (
     <Animation id="gallery" data-aos="fade-up">
       <GalleryContainer>
@@ -26,16 +31,20 @@ export function Gallery() {
           </p>
         </GalleryInfo>
         <GalleryImages>
-          <div className="image active" data-aos="zoom-in">
+          <div
+            onClick={() => router.push('/gallery')}
+            className="image active"
+            data-aos="zoom-in"
+          >
             <Image
               src="/images/backgrounds/background-services-start.jpeg"
               alt="gallery 1"
-              width="450px"
-              height="408px"
+              width="350px"
+              height="350px"
             />
             <div className="image-opacity" />
           </div>
-          <div className="image-gallery" data-aos="zoom-in">
+          <div className="image-gallery">
             <Image
               src="/images/gallery/gallery-4.jpg"
               alt="gallery 2"
@@ -43,7 +52,7 @@ export function Gallery() {
               height="350px"
             />
           </div>
-          <div className="image-gallery" data-aos="zoom-in">
+          <div className="image-gallery">
             <Image
               src="/images/backgrounds/background-services-end.jpeg"
               alt="gallery 3"
