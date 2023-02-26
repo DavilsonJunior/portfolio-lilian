@@ -11,7 +11,7 @@ export function Header() {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   return (
-    <Animation id="home" data-aos="fade-down">
+    <Animation id="inicio" data-aos="fade-down">
       <ContainerHeader isActiveMenu={isActiveMenu}>
         <button onClick={() => router.push('/')} type="button" className="logo">
           <img src="/images/logos/logo.png" alt="Logo" />
@@ -26,22 +26,22 @@ export function Header() {
         </label>
         <ul className="menu">
           <li>
-            <a href="#home">Início</a>
+            <a href="#inicio">Início</a>
           </li>
           <li>
-            <a href="#services">Serviços</a>
+            <a href="#servicos">Serviços</a>
           </li>
           <li>
-            <a href="#howwork">Como funciona</a>
+            <a href="#como-funciona">Como funciona</a>
           </li>
           <li>
-            <a href="#about">Sobre mim</a>
+            <a href="#sobre">Sobre mim</a>
           </li>
           <li>
-            <a href="#gallery">Fotos</a>
+            <a href="#fotos">Fotos</a>
           </li>
           <li id="last-bottom">
-            <a href="#contact">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
       </ContainerHeader>

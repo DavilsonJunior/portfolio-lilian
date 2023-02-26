@@ -10,13 +10,13 @@ export const services = [
     icon: '/images/icons/icon-bedroom.svg',
     title: 'Quarto e closet',
     description:
-      'Organização de closets femininos, masculinos, infantis e cama baú – incluindo rouparia, sapatos e itens pessoais.'
+      'Organização de closets femininos, masculinos, infantis (incluindo cama baú, sapatos e itens pessoais).'
   },
   {
     id: 3,
     icon: '/images/icons/icon-bathroom.svg',
     title: 'Banheiro',
-    description: 'Organização de produtos em armário e box, rouparia e lavabos.'
+    description: 'Organização de produtos em armário, box, lavabos e rouparia.'
   },
   {
     id: 4,
@@ -35,11 +35,11 @@ export const services = [
     icon: '/images/icons/icon-home-library.svg',
     title: 'Home office',
     description:
-      'Organização de mesa e gavetas, escrivaninhas e documentos residenciais.'
+      'Organização de escrivaninhas, gavetas, estante e documentos residenciais.'
   },
   {
     id: 7,
-    icon: '/images/icons/icon-service.svg',
+    icon: '/images/icons/icon-clean-area.svg',
     title: 'Área de serviço',
     description: 'Organização de produtos de limpeza e rouparia.'
   },

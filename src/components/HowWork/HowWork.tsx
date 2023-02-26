@@ -12,20 +12,12 @@ import {
 
 export function HowWork() {
   return (
-    <Animation id="howwork">
+    <Animation id="como-funciona">
       <HowWorkInfoTitle>
         <h1>Como funciona</h1>
       </HowWorkInfoTitle>
       <HowWorkContainer className="hero" data-aos="fade-up">
         <HowWorkInfo>
-          {/* <h1>Como funciona</h1> */}
-          {/* <p>
-            “Para mim, a organização traz economia de tempo, muito mais
-            qualidade de vida e mais funcionalidade com respeito à
-            individualidade de cada um e de cada casa. Por isso, sempre falo que
-            a organização é personalizada!” (Lílian Azevedo){' '}
-          </p> */}
-
           <div className="topics">
             {howWorkTopics.map(howWork => (
               <HowWorkTopic

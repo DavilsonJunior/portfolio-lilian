@@ -328,7 +328,7 @@ export const ServicesExperian = styled.div`
       font-size: 14px;
       color: ${theme.colors.infoText};
       font-family: 'DM Sans', sans-serif;
-      text-align: justify;
+      text-align: center;
     }
   }
 

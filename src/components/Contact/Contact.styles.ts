@@ -23,19 +23,41 @@ export const ContactContainer = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0px 20px 50px 20px;
+  padding: 30px 20px 50px 20px;
 
   max-width: 1200px;
   margin: auto;
 
-  @media (max-width: ${theme.breakpoints.md}) {
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    padding: 0px 20px 20px;
+    padding: 50px 20px 20px;
+  }
+`;
+
+export const ContactImage = styled.div`
+  max-width: 200px;
+  max-height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    box-shadow: -1.5rem -1.5rem ${theme.colors.boxShadowPurple};
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    max-width: 150px;
+    max-height: 250px;
+
+    img {
+      box-shadow: -1rem -1rem ${theme.colors.boxShadowPurple};
+      margin-left: 1rem;
+    }
   }
 `;
 
@@ -93,17 +115,6 @@ export const ContactInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    h1 {
-      font-size: 32px;
-    }
-
-    p {
-      font-size: 14px;
-      margin: 22px 0;
-    }
-  }
-
-  @media (max-width: ${theme.breakpoints.md}) {
     max-width: 100%;
     margin-top: 20px;
     text-align: center;
@@ -113,13 +124,24 @@ export const ContactInfo = styled.div`
     align-items: center;
 
     h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 22px 0;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    h1 {
       font-size: 40px;
       max-width: 520px;
     }
 
     p {
       font-size: 20px;
-      margin: 22px 0;
       max-width: 520px;
     }
   }
@@ -133,7 +155,7 @@ export const ContactInfo = styled.div`
 
     p {
       font-size: 16px;
-      margin: 22px 0;
+      margin: 16px 0;
     }
 
     .content strong {
@@ -174,7 +196,7 @@ export const ContactSocialMedia = styled.div`
     }
   }
 
-  @media (max-width: ${theme.breakpoints.md}) {
+  @media (max-width: ${theme.breakpoints.mdToLg}) {
     margin-top: 30px;
 
     .item-social-media {

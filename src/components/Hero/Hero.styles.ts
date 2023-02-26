@@ -51,11 +51,11 @@ export const HeroInfo = styled.div`
     text-align: justify;
   }
 
-  button a {
+  a {
     background-color: ${theme.colors.primary};
     color: ${theme.colors.buttonText};
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 
     padding: 16px 32px;
     border-radius: 4px;

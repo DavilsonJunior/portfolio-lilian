@@ -25,10 +25,13 @@ export default function Home() {
     document.addEventListener('scroll', _ => {
       const windowTop = window.pageYOffset;
       const element = document.querySelector('#buttonScroll');
-      if (windowTop >= 200) {
-        element.classList.add('visibility');
-      } else {
-        element.classList.remove('visibility');
+
+      if (element) {
+        if (windowTop >= 200) {
+          element?.classList.add('visibility');
+        } else {
+          element?.classList.remove('visibility');
+        }
       }
     });
   }, []);

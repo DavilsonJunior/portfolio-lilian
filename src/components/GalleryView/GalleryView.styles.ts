@@ -25,7 +25,7 @@ export const Animation = styled.div`
 export const GalleryViewContainer = styled.section`
   max-width: 1500px;
   margin: auto;
-  padding: 1.25rem;
+  padding: 2.5rem 1.25rem;
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
@@ -115,11 +115,6 @@ export const GalleryViewInfo = styled.div`
       max-width: 350px;
       text-align: center;
     }
-
-    h2 {
-      font-size: 16px;
-      margin: 16px 0;
-    }
   }
 `;
 
@@ -208,7 +203,7 @@ export const GalleryViewInfo = styled.div`
 
 export const GalleryViewImagesContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   .item-galeria {
     width: 100%;

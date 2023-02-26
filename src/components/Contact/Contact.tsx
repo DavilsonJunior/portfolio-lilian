@@ -4,21 +4,29 @@ import {
   ContactContainer,
   Animation,
   ContactInfo,
-  ContactSocialMedia
+  ContactSocialMedia,
+  ContactImage
 } from './Contact.styles';
 
 export function Contact() {
   // const message = 'Olá Lilian, tudo bom? Gostaria de um orçamento!';
 
   return (
-    <Animation id="contact" data-aos="fade-up">
+    <Animation id="contato" data-aos="fade-up">
       <ContactContainer>
+        <ContactImage>
+          <img
+            className="image"
+            src="/images/personal/personal-lilian-profile.jpg"
+            alt="background hero"
+          />
+        </ContactImage>
         <ContactInfo>
-          <h1>Entre em contato comigo!</h1>
+          <h1>Entre em contato</h1>
 
           <p>
-            Entre em contato para agendar uma visita técnica e solicitar o
-            orçamento. Será um prazer poder lhe atender!
+            Entre em contato comigo para agendar uma visita técnica e solicitar
+            o orçamento. Será um prazer lhe atender!
           </p>
 
           <a

@@ -14,7 +14,7 @@ import { services } from './Services.values';
 
 export function Services() {
   return (
-    <Animation id="services">
+    <Animation id="servicos">
       <ServicesContainer className="hero">
         <ServicesInfoTitle>
           <h1>Serviços que ofereço</h1>
@@ -33,19 +33,20 @@ export function Services() {
               <ServicesClientInfo data-aos="fade-up">
                 <p>
                   Cada organização é única e planejada para funcionar de forma
-                  prática para você e toda a sua família. Esta organização pode
-                  ser feita no closet, cozinha, louceiro, banheiro, sala e onde
-                  mais precisar. O essencial é que participo da organização do
-                  início ao fim, auxiliando na triagem e descarte adequados, a
-                  realocação de cada peça, acessório ou objeto, e, também,
-                  treino sua funcionária para que a organização se mantenha.
+                  prática para você e a sua família. Esta organização pode ser
+                  feita na sala, quarto, closet, banheiro, home office e onde
+                  mais precisar. O essencial é que eu realizo a organização do
+                  início ao fim, auxiliando no descarte adequado, fazendo a
+                  categorização e a realocação de cada objeto no espaço correto,
+                  e, também, a identificação dos espaços com as etiquetas.
                 </p>
 
                 <div className="client-info">
                   “Para mim, a organização traz economia de tempo, muito mais
-                  qualidade de vida e mais funcionalidade com respeito à
-                  individualidade de cada um e de cada casa. Por isso, sempre
-                  falo que a organização é personalizada!” Lílian Azevedo.
+                  qualidade de vida e funcionalidade para sua casa, devendo
+                  respeitar a individualidade de cada pessoa e família. Por
+                  isso, sempre falo que a organização deve ser personalizada!”
+                  Lílian Azevedo
                 </div>
               </ServicesClientInfo>
             </ServicesContent>

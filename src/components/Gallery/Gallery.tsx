@@ -9,31 +9,58 @@ import {
   Animation,
   GalleryInfo,
   GalleryImages,
-  GalleryInfoTitle
+  GalleryInfoTitle,
+  InstagramContainer
 } from './Gallery.styles';
 
 export function Gallery() {
   const router = useRouter();
 
   return (
-    <Animation id="gallery" data-aos="fade-up">
+    <Animation data-aos="fade-up">
       <GalleryContainer>
         <GalleryInfoTitle>
           <h1>Fotos</h1>
         </GalleryInfoTitle>
         <GalleryInfo>
-          {/* <h1>Fotos</h1> */}
-
           <p>
             Aqui você encontra alguns dos meus trabalhos. Acesse meu Instagram
-            para ver mais fotos, dicas, ideais de organizações e para conhecer
-            mais o meu trabalho.
+            para ver mais fotos, ideais de organizações e para me conhecer
+            melhor.
           </p>
+
+          <InstagramContainer>
+            {/* <div className="image-instagram">
+              <img
+                className="image-avatar"
+                src="/images/personal/personal-lilian-profile.jpg"
+                alt="instagram hero"
+              />
+            </div> */}
+            <strong>Lílian Azevedo - Personal Organizer</strong>
+
+            <div className="link-instagram">
+              <img
+                className="img-instagram"
+                src="/images/icons/icon-instagram.png"
+                alt="instagram hero"
+              />
+
+              <a
+                href="https://www.instagram.com/lilianazevedoorganizer/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @lilianazevedoorganizer
+              </a>
+            </div>
+          </InstagramContainer>
         </GalleryInfo>
+
         <GalleryImages>
           <div
             onClick={() => router.push('/gallery')}
-            className="image active"
+            className="image-gallery active"
             data-aos="zoom-in"
           >
             <Image
@@ -42,7 +69,7 @@ export function Gallery() {
               width="350px"
               height="350px"
             />
-            <div className="image-opacity" />
+            <div className="image-opacity">71+</div>
           </div>
           <div className="image-gallery">
             <Image
