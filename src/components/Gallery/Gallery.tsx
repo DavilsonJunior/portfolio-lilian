@@ -64,7 +64,7 @@ export function Gallery() {
             data-aos="zoom-in"
           >
             <Image
-              src="/images/backgrounds/background-services-start.jpeg"
+              src="/images/gallery/gallery-1.jpg"
               alt="gallery 1"
               width="350px"
               height="350px"
@@ -73,7 +73,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery">
             <Image
-              src="/images/gallery/gallery-4.jpg"
+              src="/images/gallery/gallery-2.jpg"
               alt="gallery 2"
               width="350px"
               height="350px"
@@ -81,7 +81,7 @@ export function Gallery() {
           </div>
           <div className="image-gallery">
             <Image
-              src="/images/backgrounds/background-services-end.jpeg"
+              src="/images/gallery/gallery-3.jpg"
               alt="gallery 3"
               width="350px"
               height="350px"

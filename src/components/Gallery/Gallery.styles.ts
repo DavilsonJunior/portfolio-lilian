@@ -458,6 +458,10 @@ export const GalleryImages = styled.div`
     }
   }
 
+  /* &:hover {
+    cursor: pointer;
+  } */
+
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
     flex-direction: column-reverse;
