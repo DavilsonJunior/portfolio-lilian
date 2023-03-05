@@ -143,6 +143,7 @@ export const ContactInfo = styled.div`
     p {
       font-size: 20px;
       max-width: 520px;
+      text-align: center;
     }
   }
 

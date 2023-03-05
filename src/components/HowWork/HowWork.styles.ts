@@ -4,9 +4,14 @@ import theme from '../../styles/theme';
 export const Animation = styled.div`
   /* margin: 150px 0; */
   margin: 0;
+  margin-top: 40px;
+
+  @media (max-width: ${theme.breakpoints.lg}) {
+    margin-top: 20px;
+  }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0; */
+    margin-top: 0;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {

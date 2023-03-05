@@ -83,7 +83,7 @@ export const GalleryContainer = styled.section`
 
   @media (max-width: ${theme.breakpoints.xs}) {
     .gallery-preview {
-      margin-top: 0px;
+      margin-top: 20px;
     }
   }
 `;
@@ -103,7 +103,7 @@ export const InstagramContainer = styled.div`
     }
   }
 
-  div.link-instagram {
+  a.link-instagram {
     color: ${theme.colors.primaryText};
     font-size: 14px;
     font-weight: 500;
@@ -112,17 +112,15 @@ export const InstagramContainer = styled.div`
     align-items: center;
     justify-content: center;
 
+    transition: color 400ms ease;
+
     img.img-instagram {
       width: 24px;
       height: 24px;
     }
 
-    a {
-      transition: color 400ms ease;
-
-      &:hover {
-        color: ${theme.colors.infoText};
-      }
+    &:hover {
+      color: ${theme.colors.infoText};
     }
   }
 `;
@@ -199,6 +197,10 @@ export const GalleryInfo = styled.div`
     p {
       font-size: 16px;
       /* margin: 22px 0; */
+    }
+
+    a.link-instagram {
+      margin-bottom: 10px;
     }
 
     .content strong {

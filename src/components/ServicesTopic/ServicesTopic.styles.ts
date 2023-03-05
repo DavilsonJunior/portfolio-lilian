@@ -7,20 +7,20 @@ export const ServicesTopicsContainer = styled.div`
   margin-bottom: 1.25rem;
 
   img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 
     font-family: 'Poppins', sans-serif;
 
     strong {
       font-size: 1.5rem;
-      line-height: 1.5rem;
+      line-height: 1.25rem;
       font-weight: 500;
       color: ${theme.colors.primaryText};
     }

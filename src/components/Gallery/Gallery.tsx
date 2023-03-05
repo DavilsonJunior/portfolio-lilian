@@ -4,6 +4,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { galleries } from '../GalleryView/GalleryView.values';
 import {
   GalleryContainer,
   Animation,
@@ -37,23 +38,21 @@ export function Gallery() {
                 alt="instagram hero"
               />
             </div> */}
-            <strong>Lílian Azevedo - Personal Organizer</strong>
+            {/* <strong>Lílian Azevedo - Personal Organizer</strong> */}
 
-            <div className="link-instagram">
+            <a
+              href="https://www.instagram.com/lilianazevedoorganizer/"
+              target="_blank"
+              rel="noreferrer"
+              className="link-instagram"
+            >
               <img
                 className="img-instagram"
                 src="/images/icons/icon-instagram.png"
                 alt="instagram hero"
               />
-
-              <a
-                href="https://www.instagram.com/lilianazevedoorganizer/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @lilianazevedoorganizer
-              </a>
-            </div>
+              @lilianazevedoorganizer
+            </a>
           </InstagramContainer>
         </GalleryInfo>
 
@@ -69,7 +68,7 @@ export function Gallery() {
               width="350px"
               height="350px"
             />
-            <div className="image-opacity">71+</div>
+            <div className="image-opacity">{galleries.length}+</div>
           </div>
           <div className="image-gallery">
             <Image

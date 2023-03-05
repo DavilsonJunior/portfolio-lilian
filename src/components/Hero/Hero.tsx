@@ -1,8 +1,10 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
 import { Animation, HeroContainer, HeroInfo, HeroImage } from './Hero.styles';
 
 export function Hero() {
+  const router = useRouter();
   return (
     <Animation id="hero" data-aos="fade-up">
       <HeroContainer className="hero">
@@ -17,13 +19,14 @@ export function Hero() {
             físicos.
           </h2>
 
-          <a
-            href="https://api.whatsapp.com/send?phone=5516996469902"
-            target="_blank"
-            rel="noreferrer"
+          <button
+            type="button"
+            onClick={() =>
+              router.push('https://api.whatsapp.com/send?phone=5516996469902')
+            }
           >
             Entre em contato
-          </a>
+          </button>
         </HeroInfo>
         <HeroImage>
           <img

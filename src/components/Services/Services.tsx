@@ -8,7 +8,9 @@ import {
   ServicesExperian,
   ServicesInfoTitle,
   ServicesClientInfo,
-  ServicesContent
+  ServicesContent,
+  ClientInfoContainer,
+  ClientInfoBottomContainer
 } from './Services.styles';
 import { services } from './Services.values';
 
@@ -41,13 +43,17 @@ export function Services() {
                   e, também, a identificação dos espaços com as etiquetas.
                 </p>
 
-                <div className="client-info">
-                  “Para mim, a organização traz economia de tempo, muito mais
-                  qualidade de vida e funcionalidade para sua casa, devendo
-                  respeitar a individualidade de cada pessoa e família. Por
-                  isso, sempre falo que a organização deve ser personalizada!”
-                  Lílian Azevedo
-                </div>
+                <ClientInfoContainer>
+                  <div className="client-info">
+                    “Para mim, a organização traz economia de tempo, muito mais
+                    qualidade de vida e funcionalidade para sua casa, devendo
+                    respeitar a individualidade de cada pessoa e família. Por
+                    isso, sempre falo que a organização deve ser personalizada!”
+                    <br />
+                    Lílian Azevedo
+                    <img src="/images/logos/lavanda.png" alt="lavanda" />
+                  </div>
+                </ClientInfoContainer>
               </ServicesClientInfo>
             </ServicesContent>
           </div>
@@ -68,6 +74,16 @@ export function Services() {
             </div>
           ))}
         </ServicesExperian>
+        <ClientInfoBottomContainer>
+          <div className="client-info">
+            “Para mim, a organização traz economia de tempo, muito mais
+            qualidade de vida e funcionalidade para sua casa, devendo respeitar
+            a individualidade de cada pessoa e família. Por isso, sempre falo
+            que a organização deve ser personalizada!” <br />
+            Lílian Azevedo
+            <img src="/images/logos/lavanda.png" alt="lavanda" />
+          </div>
+        </ClientInfoBottomContainer>
       </ServicesContainer>
     </Animation>
   );

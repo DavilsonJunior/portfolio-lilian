@@ -3,7 +3,7 @@ import theme from '../../styles/theme';
 
 export const Animation = styled.div`
   /* margin: 150px 0; */
-  margin: 60px 0;
+  margin: 84px 0;
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
     margin: 90px 0;

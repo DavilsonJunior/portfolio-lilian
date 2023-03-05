@@ -49,14 +49,14 @@ export const ServicesInfo = styled.div`
     justify-content: flex-start;
 
     img {
-      width: 24px;
-      height: 24px;
-      margin-right: 1rem;
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
     }
 
     strong {
       font-size: 1.5rem;
-      line-height: 24px;
+      line-height: 1.25rem;
       font-weight: 500;
       color: ${theme.colors.primaryText};
       font-family: 'Poppins', sans-serif;
@@ -126,7 +126,7 @@ export const ServicesInfo = styled.div`
 
     .services-item {
       strong {
-        line-height: 24px;
+        line-height: 1.25rem;
       }
     }
   }
@@ -139,7 +139,11 @@ export const ServicesClientInfo = styled.div`
   /* text-align: center; */
   margin: 8px 0px 16px;
 
-  display: flex;
+  /* display: flex;
+  align-items: center; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
   p {
@@ -148,6 +152,14 @@ export const ServicesClientInfo = styled.div`
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     text-align: justify;
+
+    max-width: 697px;
+  }
+
+  .client-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .client-info {
@@ -155,11 +167,12 @@ export const ServicesClientInfo = styled.div`
     border-radius: 1.25rem;
     background-color: ${theme.colors.boxShadowPurple};
     color: ${theme.colors.infoTextSecondary};
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    text-align: justify;
-    margin-left: 40px;
+    text-align: center;
+
+    max-width: 450px;
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -169,6 +182,9 @@ export const ServicesClientInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
+    .client-info {
+      margin-left: 20px;
+    }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -185,11 +201,27 @@ export const ServicesClientInfo = styled.div`
       text-align: justify;
     }
 
+    .client-info-container {
+      display: none;
+    }
+
     .client-info {
       margin-left: 0px;
       margin-top: 1.25rem;
       padding: 1rem;
       font-size: 0.875rem;
+
+      /* position: relative; */
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        position: absolute;
+        top: -40px;
+        right: -35px;
+        transform: rotate(8deg);
+      }
     }
   }
 
@@ -360,6 +392,183 @@ export const ServicesExperian = styled.div`
 
     p {
       font-size: 16px;
+    }
+  }
+`;
+
+export const ClientInfoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  .client-info {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: ${theme.colors.boxShadowPurple};
+    color: ${theme.colors.infoTextSecondary};
+    font-size: 0.875rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    max-width: 450px;
+
+    position: relative;
+
+    & > img {
+      width: 65px;
+      height: 185px;
+
+      position: absolute;
+      top: -55px;
+      right: -45px;
+      transform: rotate(8deg);
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    display: none;
+
+    .client-info {
+      margin-left: 0px;
+      margin-top: 1.25rem;
+      padding: 1rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    .client-info {
+      width: 100%;
+
+      max-width: 1000px;
+    }
+  }
+`;
+
+export const ClientInfoBottomContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  display: none;
+
+  .client-info {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: ${theme.colors.boxShadowPurple};
+    color: ${theme.colors.infoTextSecondary};
+    font-size: 0.875rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    max-width: 450px;
+
+    position: relative;
+
+    & > img {
+      width: 54px;
+      height: 160px;
+
+      position: absolute;
+      top: -40px;
+      right: -35px;
+      transform: rotate(8deg);
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.md}) {
+    display: flex;
+
+    .client-info {
+      margin-left: 0px;
+      margin-top: 1.25rem;
+      padding: 1rem;
+      font-size: 0.875rem;
+
+      display: flex;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    .client-info {
+      /* width: 100%; */
+
+      max-width: 400px;
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        top: -25px;
+        right: -35px;
+        transform: rotate(8deg);
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .client-info {
+      max-width: 350px;
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        top: -25px;
+        right: -35px;
+        transform: rotate(8deg);
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .client-info {
+      max-width: 300px;
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        top: -25px;
+        right: -35px;
+        transform: rotate(8deg);
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .client-info {
+      max-width: 250px;
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        top: -25px;
+        right: -35px;
+        transform: rotate(8deg);
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .client-info {
+      max-width: 200px;
+
+      & > img {
+        width: 54px;
+        height: 160px;
+
+        top: -25px;
+        right: -30px;
+        transform: rotate(8deg);
+      }
     }
   }
 `;

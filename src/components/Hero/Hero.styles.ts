@@ -51,11 +51,14 @@ export const HeroInfo = styled.div`
     text-align: justify;
   }
 
-  a {
+  button {
     background-color: ${theme.colors.primary};
     color: ${theme.colors.buttonText};
     font-size: 16px;
     font-weight: bold;
+
+    padding: 0;
+    margin: 0;
 
     padding: 16px 32px;
     border-radius: 4px;
@@ -113,11 +116,8 @@ export const HeroInfo = styled.div`
     h2 {
       font-size: 22px;
       margin: 22px 0;
+      text-align: center;
       /* max-width: 540px; */
-    }
-
-    button {
-      margin-top: 20px;
     }
   }
 
