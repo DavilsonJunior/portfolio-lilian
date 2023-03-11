@@ -10,6 +10,10 @@ export function Header() {
   const router = useRouter();
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
+  const navigateToContent = (route: string) => {
+    router.push(route);
+  };
+
   return (
     <Animation id="inicio" data-aos="fade-down">
       <ContainerHeader isActiveMenu={isActiveMenu}>
@@ -25,24 +29,27 @@ export function Header() {
           <div className="menu-button" />
         </label>
         <ul className="menu">
-          <li>
-            <a href="#inicio">Início</a>
-          </li>
-          <li>
-            <a href="#servicos">Serviços</a>
-          </li>
-          <li>
-            <a href="#como-funciona">Como funciona</a>
-          </li>
-          <li>
-            <a href="#sobre">Sobre mim</a>
-          </li>
-          <li>
-            <a href="#fotos">Fotos</a>
-          </li>
-          <li id="last-bottom">
-            <a href="#contato">Contato</a>
-          </li>
+          <button type="button" onClick={() => navigateToContent('#inicio')}>
+            <div className="link">Início</div>
+          </button>
+          <button type="button" onClick={() => navigateToContent('#servicos')}>
+            <div className="link">Serviços</div>
+          </button>
+          <button
+            type="button"
+            onClick={() => navigateToContent('#como-funciona')}
+          >
+            <div className="link">Como funciona</div>
+          </button>
+          <button type="button" onClick={() => navigateToContent('#sobre')}>
+            <div className="link">Sobre mim</div>
+          </button>
+          <button type="button" onClick={() => navigateToContent('#fotos')}>
+            <div className="link">Fotos</div>
+          </button>
+          <button type="button" onClick={() => navigateToContent('#contato')}>
+            <div className="link">Contato</div>
+          </button>
         </ul>
       </ContainerHeader>
     </Animation>

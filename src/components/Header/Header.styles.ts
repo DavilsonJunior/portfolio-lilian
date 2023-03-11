@@ -43,12 +43,13 @@ export const ContainerHeader = styled.header<MenuProps>`
     padding: 0;
   }
 
-  .menu > li {
+  .menu > button {
     margin: 0 1rem;
     overflow: hidden;
     font-family: 'DM Sans', sans-serif;
-
-    a {
+    font-weight: 500;
+    color: ${theme.colors.primaryText};
+    div.link {
       color: ${theme.colors.primaryText};
       height: 150px;
       display: flex;
@@ -57,7 +58,7 @@ export const ContainerHeader = styled.header<MenuProps>`
       /* border-bottom: 2px solid transparent; */
     }
 
-    a:hover {
+    div.link:hover {
       color: ${theme.colors.primary};
       /* font-weight: 500; */
       /* border-bottom: 2px solid ${theme.colors.primary}; */
@@ -131,21 +132,21 @@ export const ContainerHeader = styled.header<MenuProps>`
       justify-content: center;
       align-items: center;
     }
-    #menu-toggle ~ .menu li {
+    #menu-toggle ~ .menu button {
       height: 0;
       margin: 0;
       padding: 0;
       border: 0;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-    #menu-toggle:checked ~ .menu li {
+    #menu-toggle:checked ~ .menu button {
       border: 1px solid ${theme.colors.borderHeader};
       height: 2.5em;
       /* padding: 0.5em; */
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    #menu-toggle:checked ~ .menu li > a {
+    #menu-toggle:checked ~ .menu button > a {
       display: block;
       width: 100%;
       height: 100%;
@@ -161,7 +162,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     #menu-toggle:checked ~ .menu li:last-of-type {
       /* border-bottom: 2px solid ${theme.colors.borderHeader}; */
     }
-    .menu > li {
+    .menu > button {
       display: flex;
       justify-content: center;
       margin: 0;
