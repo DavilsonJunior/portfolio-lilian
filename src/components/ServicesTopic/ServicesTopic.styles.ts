@@ -20,7 +20,7 @@ export const ServicesTopicsContainer = styled.div`
 
     strong {
       font-size: 1.5rem;
-      line-height: 1.25rem;
+      line-height: 1.4rem;
       font-weight: 500;
       color: ${theme.colors.primaryText};
     }

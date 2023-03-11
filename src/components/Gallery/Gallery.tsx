@@ -18,81 +18,83 @@ export function Gallery() {
   const router = useRouter();
 
   return (
-    <Animation data-aos="fade-up">
-      <GalleryContainer>
-        <GalleryInfoTitle>
-          <h1>Fotos</h1>
-        </GalleryInfoTitle>
-        <GalleryInfo>
-          <p>
-            Aqui você encontra alguns dos meus trabalhos. Acesse meu Instagram
-            para ver mais fotos, ideais de organizações e para me conhecer
-            melhor.
-          </p>
+    <>
+      <Animation data-aos="fade-up">
+        <GalleryContainer>
+          <GalleryInfoTitle>
+            <h1>Fotos</h1>
+          </GalleryInfoTitle>
+          <GalleryInfo>
+            <p>
+              Aqui você encontra alguns dos meus trabalhos. Acesse meu Instagram
+              para ver mais fotos, ideais de organizações e para me conhecer
+              melhor.
+            </p>
 
-          <InstagramContainer>
-            {/* <div className="image-instagram">
+            <InstagramContainer>
+              {/* <div className="image-instagram">
               <img
                 className="image-avatar"
                 src="/images/personal/personal-lilian-profile.jpg"
                 alt="instagram hero"
               />
             </div> */}
-            {/* <strong>Lílian Azevedo - Personal Organizer</strong> */}
+              {/* <strong>Lílian Azevedo - Personal Organizer</strong> */}
 
-            <a
-              href="https://www.instagram.com/lilianazevedoorganizer/"
-              target="_blank"
-              rel="noreferrer"
-              className="link-instagram"
+              <a
+                href="https://www.instagram.com/lilianazevedoorganizer/"
+                target="_blank"
+                rel="noreferrer"
+                className="link-instagram"
+              >
+                <img
+                  className="img-instagram"
+                  src="/images/icons/icon-instagram.png"
+                  alt="instagram hero"
+                />
+                @lilianazevedoorganizer
+              </a>
+            </InstagramContainer>
+          </GalleryInfo>
+
+          <GalleryImages>
+            <div
+              onClick={() => router.push('/gallery')}
+              className="image-gallery active"
             >
-              <img
-                className="img-instagram"
-                src="/images/icons/icon-instagram.png"
-                alt="instagram hero"
+              <Image
+                src="/images/gallery/gallery-1.jpg"
+                alt="gallery 1"
+                width="350px"
+                height="350px"
               />
-              @lilianazevedoorganizer
+              <div className="image-opacity">{galleries.length}+</div>
+            </div>
+            <div className="image-gallery">
+              <Image
+                src="/images/gallery/gallery-2.jpg"
+                alt="gallery 2"
+                width="350px"
+                height="350px"
+              />
+            </div>
+            <div className="image-gallery">
+              <Image
+                src="/images/gallery/gallery-3.jpg"
+                alt="gallery 3"
+                width="350px"
+                height="350px"
+              />
+            </div>
+          </GalleryImages>
+          <div className="gallery-preview">
+            <a href="/gallery">
+              Ver todos <HiArrowNarrowRight />
             </a>
-          </InstagramContainer>
-        </GalleryInfo>
-
-        <GalleryImages>
-          <div
-            onClick={() => router.push('/gallery')}
-            className="image-gallery active"
-            data-aos="zoom-in"
-          >
-            <Image
-              src="/images/gallery/gallery-1.jpg"
-              alt="gallery 1"
-              width="350px"
-              height="350px"
-            />
-            <div className="image-opacity">{galleries.length}+</div>
           </div>
-          <div className="image-gallery">
-            <Image
-              src="/images/gallery/gallery-2.jpg"
-              alt="gallery 2"
-              width="350px"
-              height="350px"
-            />
-          </div>
-          <div className="image-gallery">
-            <Image
-              src="/images/gallery/gallery-3.jpg"
-              alt="gallery 3"
-              width="350px"
-              height="350px"
-            />
-          </div>
-        </GalleryImages>
-        <div className="gallery-preview">
-          <a href="/gallery">
-            Ver todos <HiArrowNarrowRight />
-          </a>
-        </div>
-      </GalleryContainer>
-    </Animation>
+        </GalleryContainer>
+      </Animation>
+      <span id="contato" />
+    </>
   );
 }

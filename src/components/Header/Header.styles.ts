@@ -22,7 +22,7 @@ export const ContainerHeader = styled.header<MenuProps>`
   height: 150px;
   padding: 20px;
 
-  border-bottom: 2px solid ${theme.colors.borderBottom};
+  /* border-bottom: 2px solid ${theme.colors.borderBottom}; */
 
   margin-bottom: ${props => (props.isActiveMenu ? 250 : 0)}px;
 
@@ -46,18 +46,20 @@ export const ContainerHeader = styled.header<MenuProps>`
   .menu > li {
     margin: 0 1rem;
     overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
 
     a {
       color: ${theme.colors.primaryText};
       height: 150px;
       display: flex;
       align-items: center;
-      border-bottom: 2px solid transparent;
+      /* font-weight: 500; */
+      /* border-bottom: 2px solid transparent; */
     }
 
     a:hover {
       color: ${theme.colors.primary};
-      font-weight: 500;
+      /* font-weight: 500; */
       /* border-bottom: 2px solid ${theme.colors.primary}; */
     }
   }
@@ -114,7 +116,7 @@ export const ContainerHeader = styled.header<MenuProps>`
   }
 
   @media (max-width: 900px) {
-    border-bottom: 1px solid ${theme.colors.borderBottom};
+    /* border-bottom: 1px solid ${theme.colors.borderBottom}; */
 
     .menu-button-container {
       display: flex;
@@ -157,7 +159,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     }
 
     #menu-toggle:checked ~ .menu li:last-of-type {
-      border-bottom: 2px solid ${theme.colors.borderHeader};
+      /* border-bottom: 2px solid ${theme.colors.borderHeader}; */
     }
     .menu > li {
       display: flex;

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 
 import {
@@ -10,12 +11,7 @@ import {
 } from './Footer.styles';
 
 export function Footer() {
-  const handleScrollTop = () => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+  const router = useRouter();
 
   return (
     <Animation>
@@ -25,7 +21,7 @@ export function Footer() {
           <p>Todos os direitos reservados.</p>
         </FooterInfo>
         <FooterLogo>
-          <button type="button" onClick={handleScrollTop}>
+          <button type="button" onClick={() => router.push('/')}>
             <Image
               src="/images/logos/logo-footer.svg"
               alt="logo footer Lilian"

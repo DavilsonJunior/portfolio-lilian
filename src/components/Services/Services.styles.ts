@@ -56,7 +56,7 @@ export const ServicesInfo = styled.div`
 
     strong {
       font-size: 1.5rem;
-      line-height: 1.25rem;
+      line-height: 1.4rem;
       font-weight: 500;
       color: ${theme.colors.primaryText};
       font-family: 'Poppins', sans-serif;
@@ -126,7 +126,7 @@ export const ServicesInfo = styled.div`
 
     .services-item {
       strong {
-        line-height: 1.25rem;
+        line-height: 1.4rem;
       }
     }
   }
@@ -144,7 +144,7 @@ export const ServicesClientInfo = styled.div`
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  /* align-items: center; */
 
   p {
     color: ${theme.colors.infoText};
@@ -401,7 +401,7 @@ export const ClientInfoContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 30px;
+  /* margin-top: 30px; */
 
   .client-info {
     padding: 1.25rem;
@@ -477,7 +477,7 @@ export const ClientInfoBottomContainer = styled.div`
 
       position: absolute;
       top: -40px;
-      right: -35px;
+      right: -30px;
       transform: rotate(8deg);
     }
   }
@@ -499,19 +499,21 @@ export const ClientInfoBottomContainer = styled.div`
     .client-info {
       /* width: 100%; */
 
-      max-width: 400px;
+      /* max-width: 400px; */
+      max-width: 600px;
+      width: 90%;
 
       & > img {
-        width: 54px;
-        height: 160px;
+        width: 45px;
+        height: 145px;
 
         top: -25px;
-        right: -35px;
+        right: -25px;
         transform: rotate(8deg);
       }
     }
   }
-
+  /*
   @media (max-width: 500px) {
     .client-info {
       max-width: 350px;
@@ -521,7 +523,7 @@ export const ClientInfoBottomContainer = styled.div`
         height: 160px;
 
         top: -25px;
-        right: -35px;
+        right: -30px;
         transform: rotate(8deg);
       }
     }
@@ -536,7 +538,7 @@ export const ClientInfoBottomContainer = styled.div`
         height: 160px;
 
         top: -25px;
-        right: -35px;
+        right: -30px;
         transform: rotate(8deg);
       }
     }
@@ -551,7 +553,7 @@ export const ClientInfoBottomContainer = styled.div`
         height: 160px;
 
         top: -25px;
-        right: -35px;
+        right: -30px;
         transform: rotate(8deg);
       }
     }
@@ -570,5 +572,5 @@ export const ClientInfoBottomContainer = styled.div`
         transform: rotate(8deg);
       }
     }
-  }
+  } */
 `;

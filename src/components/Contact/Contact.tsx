@@ -12,7 +12,8 @@ export function Contact() {
   // const message = 'Olá Lilian, tudo bom? Gostaria de um orçamento!';
 
   return (
-    <Animation id="contato" data-aos="fade-up">
+    <Animation data-aos="fade-up">
+      {/* <h1>Entre em contato</h1> */}
       <ContactContainer>
         <ContactImage>
           <img

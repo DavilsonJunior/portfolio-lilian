@@ -36,9 +36,6 @@ export function Hero() {
           />
         </HeroImage>
       </HeroContainer>
-      {/* <ButtonToTop>
-        <FaArrowUp />
-      </ButtonToTop> */}
     </Animation>
   );
 }

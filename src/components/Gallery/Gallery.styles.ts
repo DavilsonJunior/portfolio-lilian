@@ -180,7 +180,7 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 20px;
-      text-align: justify;
+      text-align: center;
       /* margin: 22px 0; */
     }
   }
@@ -439,6 +439,12 @@ export const GalleryImages = styled.div`
   }
 
   .active {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
     .image-opacity {
       background-color: ${theme.colors.primaryText};
       opacity: 0.8;
@@ -466,7 +472,7 @@ export const GalleryImages = styled.div`
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
 `;

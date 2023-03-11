@@ -13,7 +13,7 @@ export const Animation = styled.div`
 
 export const HeroContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 2fr;
   align-items: center;
 
   padding: 0 20px;
@@ -46,7 +46,7 @@ export const HeroInfo = styled.div`
     font-size: 1.375rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    margin: 28px 0;
+    margin: 50px 0;
     /* max-width: 550px; */
     text-align: justify;
   }
@@ -158,7 +158,7 @@ export const HeroImage = styled.div`
 
   img.image {
     width: 100%;
-    height: 420px;
+    height: 430px;
     max-width: 700px;
     max-height: 524px;
     box-shadow: 2rem -2rem ${theme.colors.boxShadowPurple};
