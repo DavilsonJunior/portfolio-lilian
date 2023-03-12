@@ -55,6 +55,10 @@ export const ContainerHeader = styled.header<MenuProps>`
       align-items: center;
 
       line-height: 40px;
+
+      @media (max-width: 905px) {
+        color: ${theme.colors.primary};
+      }
     }
 
     div.link:hover {
@@ -112,7 +116,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     transform: rotate(-405deg);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 905px) {
     .menu-button-container {
       display: flex;
     }
