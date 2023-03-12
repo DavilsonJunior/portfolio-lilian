@@ -1,10 +1,8 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 import { Animation, HeroContainer, HeroInfo, HeroImage } from './Hero.styles';
 
 export function Hero() {
-  const router = useRouter();
   return (
     <Animation id="hero" data-aos="fade-up">
       <HeroContainer className="hero">
@@ -22,7 +20,10 @@ export function Hero() {
           <button
             type="button"
             onClick={() =>
-              router.push('https://api.whatsapp.com/send?phone=5516996469902')
+              window.open(
+                'https://api.whatsapp.com/send?phone=5516996469902',
+                '_blank'
+              )
             }
           >
             Entre em contato
