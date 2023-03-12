@@ -2,19 +2,12 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
-
   @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0; */
     margin: 60px 0;
   }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     margin: 40px 0;
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
   }
 `;
 
@@ -25,7 +18,6 @@ export const ContactContainer = styled.section`
 
   padding: 30px 20px 50px 20px;
 
-  /* max-width: 1200px; */
   max-width: 800px;
   margin: auto;
 
@@ -192,7 +184,6 @@ export const ContactInfoTitle = styled.div`
 
   @media (max-width: ${theme.breakpoints.lg}) {
     max-width: 610px;
-    /* margin-bottom: 2.5rem; */
 
     h1 {
       font-size: 36px;
@@ -259,7 +250,6 @@ export const ContactSocialMedia = styled.div`
   .item-social-media {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 
     img {
       width: 100%;

@@ -2,27 +2,11 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0 0 0; */
   margin: 0;
-
   background-color: ${theme.colors.primaryText};
-
-  @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0 0 0; */
-  }
-
-  @media (max-width: ${theme.breakpoints.sm}) {
-    /* margin: 90px 0 0 0; */
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0 0 0; */
-  }
 `;
 
 export const FooterContainer = styled.section`
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -31,7 +15,6 @@ export const FooterContainer = styled.section`
   padding: 1.25rem;
 
   max-width: 1500px;
-  /* height: 237px; */
   height: auto;
   margin: auto;
 
@@ -68,8 +51,6 @@ export const FooterInfo = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    /* height: 50px; */
-
     p {
       font-size: 12px;
       line-height: 18px;
@@ -91,10 +72,7 @@ export const FooterSocialMedia = styled.div`
   display: flex;
   justify-content: center;
   gap: 1rem;
-  /* justify-content: space-between; */
   align-items: center;
-  /* width: 140px;
-  margin-left: auto; */
 
   & > a > svg {
     color: ${theme.colors.background};

@@ -19,8 +19,6 @@ export function ServicesPlusStart() {
       </ServicesPlusStartInfoTitle>
       <ServicesPlusStartContainer className="hero">
         <ServicesPlusStartInfo>
-          {/* <h1>Outros serviços que ofereço</h1> */}
-
           <div className="topics">
             {services.map(service => (
               <ServicesTopic

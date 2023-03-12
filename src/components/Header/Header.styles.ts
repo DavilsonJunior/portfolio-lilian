@@ -22,8 +22,6 @@ export const ContainerHeader = styled.header<MenuProps>`
   height: 150px;
   padding: 20px;
 
-  /* border-bottom: 2px solid ${theme.colors.borderBottom}; */
-
   margin-bottom: ${props => (props.isActiveMenu ? 250 : 0)}px;
 
   button.logo {
@@ -52,18 +50,15 @@ export const ContainerHeader = styled.header<MenuProps>`
 
     div.link {
       color: ${theme.colors.primaryText};
-      /* height: 150px; */
+
       display: flex;
       align-items: center;
-      /* font-weight: 500; */
-      /* border-bottom: 2px solid transparent; */
+
       line-height: 40px;
     }
 
     div.link:hover {
       color: ${theme.colors.primary};
-      /* font-weight: 500; */
-      /* border-bottom: 2px solid ${theme.colors.primary}; */
     }
   }
 
@@ -109,7 +104,6 @@ export const ContainerHeader = styled.header<MenuProps>`
   }
 
   #menu-toggle:checked + .menu-button-container .menu-button {
-    /* background: rgba(255, 255, 255, 0); */
     background: transparent;
   }
 
@@ -119,8 +113,6 @@ export const ContainerHeader = styled.header<MenuProps>`
   }
 
   @media (max-width: 900px) {
-    /* border-bottom: 1px solid ${theme.colors.borderBottom}; */
-
     .menu-button-container {
       display: flex;
     }
@@ -144,7 +136,7 @@ export const ContainerHeader = styled.header<MenuProps>`
     #menu-toggle:checked ~ .menu button {
       border: 1px solid ${theme.colors.borderHeader};
       height: 2.5em;
-      /* padding: 0.5em; */
+
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
@@ -161,9 +153,6 @@ export const ContainerHeader = styled.header<MenuProps>`
       align-items: center;
     }
 
-    #menu-toggle:checked ~ .menu li:last-of-type {
-      /* border-bottom: 2px solid ${theme.colors.borderHeader}; */
-    }
     .menu > button {
       display: flex;
       justify-content: center;

@@ -2,20 +2,10 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
-  /* margin: 60px 0; */
   margin: 60px 0;
-
-  @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0; */
-  }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     margin: 40px 0;
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
   }
 `;
 
@@ -143,7 +133,6 @@ export const GalleryInfo = styled.div`
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    /* margin: 28px 0; */
     margin-bottom: 20px;
     max-width: 740px;
     text-align: center;
@@ -166,7 +155,6 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 14px;
-      /* margin: 22px 0; */
     }
   }
 
@@ -181,7 +169,6 @@ export const GalleryInfo = styled.div`
     p {
       font-size: 20px;
       text-align: center;
-      /* margin: 22px 0; */
     }
   }
 
@@ -196,7 +183,6 @@ export const GalleryInfo = styled.div`
 
     p {
       font-size: 16px;
-      /* margin: 22px 0; */
     }
 
     a.link-instagram {
@@ -233,7 +219,6 @@ export const GalleryInfoTitle = styled.div`
 
   @media (max-width: ${theme.breakpoints.lg}) {
     max-width: 610px;
-    /* margin-bottom: 2.5rem; */
 
     h1 {
       font-size: 36px;
@@ -280,158 +265,10 @@ export const GalleryInfoTitle = styled.div`
   }
 `;
 
-// export const GalleryImages = styled.div`
-//   /* display: flex;
-//   align-items: center;
-//   gap: 1rem; */
-
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   align-items: center;
-
-//   /* margin-top: 20px; */
-
-//   .image-gallery {
-//     max-width: 350px;
-//     max-height: 350px;
-//   }
-
-//   .active {
-//     width: 350px;
-//     max-height: 350px;
-//     position: relative;
-
-//     & > div > img {
-//       /* border-radius: 20px; */
-//     }
-
-//     & > .image-opacity {
-//       position: absolute;
-//       background-color: ${theme.colors.primaryText};
-//       /* border-radius: 20px; */
-//       z-index: 10;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-
-//       opacity: 0.6;
-//       cursor: pointer;
-
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-
-//       &::after {
-//         content: '71+';
-//         font-size: 42px;
-//         font-weight: bold;
-//         font-family: 'Poppins', sans-serif;
-//         color: ${theme.colors.background};
-//       }
-//     }
-
-//     &:hover {
-//       & > .image-opacity {
-//         opacity: 0.6;
-//         cursor: pointer;
-
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-
-//         &::after {
-//           content: '71+';
-//           font-size: 42px;
-//           font-weight: bold;
-//           font-family: 'Poppins', sans-serif;
-//           color: ${theme.colors.background};
-//         }
-//       }
-//     }
-
-//     @media (max-width: ${theme.breakpoints.md}) {
-//       & > .image-opacity {
-//         opacity: 0.6;
-//         cursor: pointer;
-
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-
-//         height: 99%;
-
-//         &::after {
-//           content: '71+';
-//           font-size: 42px;
-//           font-weight: bold;
-//           font-family: 'Poppins', sans-serif;
-//           color: ${theme.colors.background};
-//         }
-//       }
-//     }
-//   }
-
-//   @media (max-width: 800px) {
-//     /* flex-direction: column-reverse; */
-
-//     /* display: grid;
-//     grid-template-columns: 1fr;
-//     align-items: center;
-//     justify-items: center; */
-
-//     display: flex;
-//     flex-direction: column-reverse;
-//     align-items: center;
-//     justify-items: center;
-
-//     & > .active .image-opacity {
-//       /* height: 100%; */
-//     }
-//   }
-
-//   @media (max-width: ${theme.breakpoints.xs}) {
-//     padding: 10px;
-
-//     & > .active {
-//       width: 100%;
-//     }
-
-//     & > .active .image-opacity {
-//       height: 98.5%;
-//     }
-
-//     .image-gallery {
-//       padding: 0px;
-//     }
-//   }
-
-//   @media (max-width: 338px) {
-//     padding: 5px;
-
-//     & > .active {
-//       width: 100%;
-//     }
-
-//     & > .active .image-opacity {
-//       height: 98%;
-
-//       &::after {
-//         font-size: 32px;
-//       }
-//     }
-
-//     .image-gallery {
-//       padding: 0px;
-//     }
-//   }
-// `;
-
 export const GalleryImages = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  /* gap: 1rem; */
 
   .image-gallery {
     max-width: 350px;
@@ -465,10 +302,6 @@ export const GalleryImages = styled.div`
       justify-content: center;
     }
   }
-
-  /* &:hover {
-    cursor: pointer;
-  } */
 
   @media (max-width: ${theme.breakpoints.md}) {
     display: flex;

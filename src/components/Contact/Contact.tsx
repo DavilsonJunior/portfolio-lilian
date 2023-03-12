@@ -12,11 +12,8 @@ import {
 } from './Contact.styles';
 
 export function Contact() {
-  // const message = 'Olá Lilian, tudo bom? Gostaria de um orçamento!';
-
   return (
     <Animation data-aos="fade-up">
-      {/* <h1>Entre em contato</h1> */}
       <ContactInfoTitle>
         <h1>Entre em contato</h1>
       </ContactInfoTitle>
@@ -31,21 +28,10 @@ export function Contact() {
 
         <ContactInfoContainer>
           <ContactInfo>
-            {/* <h1>Entre em contato</h1> */}
-
             <p>
               Entre em contato comigo para agendar uma visita técnica e
               solicitar o orçamento. Será um prazer lhe atender!
             </p>
-
-            {/* <a
-              href="https://api.whatsapp.com/send?phone=5516996469902"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiWhatsappLine />
-              Entre em contato
-            </a> */}
           </ContactInfo>
           <ContactSocialMedia>
             <div className="item-social-media">

@@ -57,7 +57,6 @@ export default class MyDocument extends Document {
             type="image/x-icon"
             href="/favicon/favicon.ico"
           />
-          {/* <meta name="theme-color" content="#ffffff" /> */}
 
           <noscript>
             <style>

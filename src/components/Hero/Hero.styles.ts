@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* padding: 1em; */
-  /* margin-top: 60px; */
   margin: 2.2rem 0;
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -37,7 +35,6 @@ export const HeroInfo = styled.div`
     color: ${theme.colors.primaryText};
     font-size: 40px;
     font-weight: 700;
-    /* max-width: 550px; */
     text-align: justify;
   }
 
@@ -47,7 +44,6 @@ export const HeroInfo = styled.div`
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     margin: 50px 0;
-    /* max-width: 550px; */
     text-align: justify;
   }
 
@@ -74,12 +70,10 @@ export const HeroInfo = styled.div`
 
     h1 {
       font-size: 36px;
-      /* max-width: 450px; */
     }
 
     h2 {
       font-size: 18px;
-      /* max-width: 480px; */
     }
   }
 
@@ -89,26 +83,24 @@ export const HeroInfo = styled.div`
 
     h1 {
       font-size: 32px;
-      /* max-width: 420px; */
     }
 
     h2 {
       font-size: 16px;
       margin: 22px 0;
-      /* max-width: 430px; */
     }
   }
 
   @media (max-width: ${theme.breakpoints.md}) {
     text-align: center;
-    /* margin-bottom: 60px; */
+
     margin-bottom: 20px;
     max-width: 540px;
 
     h1 {
       margin: auto;
       font-size: 40px;
-      /* max-width: 520px; */
+
       text-align: center;
       margin-top: 30px;
     }
@@ -117,7 +109,6 @@ export const HeroInfo = styled.div`
       font-size: 22px;
       margin: 22px 0;
       text-align: center;
-      /* max-width: 540px; */
     }
   }
 
@@ -125,14 +116,13 @@ export const HeroInfo = styled.div`
     max-width: 540px;
     h1 {
       font-size: 36px;
-      /* max-width: 520px; */
+
       text-align: center;
     }
 
     h2 {
       font-size: 18px;
       margin: 22px 0;
-      /* max-width: 540px; */
     }
   }
 
@@ -140,14 +130,13 @@ export const HeroInfo = styled.div`
     max-width: 400px;
     h1 {
       font-size: 30px;
-      /* max-width: 350px; */
+
       text-align: center;
     }
 
     h2 {
       font-size: 16px;
       margin: 16px 0;
-      /* max-width: 400px; */
     }
   }
 `;
@@ -186,20 +175,3 @@ export const HeroImage = styled.div`
     }
   }
 `;
-
-// export const ButtonToTop = styled.button`
-//   width: 50px;
-//   height: 50px;
-//   border-radius: 50%;
-//   background-color: ${theme.colors.primary};
-
-//   position: fixed;
-//   right: 0;
-//   bottom: 0;
-
-//   svg {
-//     color: white;
-//     font-size: 24px;
-//     font-weight: bold;
-//   }
-// `;

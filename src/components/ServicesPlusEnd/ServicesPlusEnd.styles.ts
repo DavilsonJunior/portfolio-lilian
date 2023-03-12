@@ -2,32 +2,14 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
   margin: 60px 0;
-
-  @media (max-width: ${theme.breakpoints.mdToLg}) {
-    /* margin: 90px 0; */
-  }
 
   @media (max-width: ${theme.breakpoints.sm}) {
     margin: 40px 0 50px;
   }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
-  }
 `;
 
 export const ServicesPlusEndContainer = styled.section`
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 20px;
-
-  max-width: 1500px;
-  margin: auto; */
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -35,7 +17,6 @@ export const ServicesPlusEndContainer = styled.section`
   padding: 0 20px;
 
   max-width: 1500px;
-  /* height: 400px; */
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -53,10 +34,6 @@ export const ServicesPlusEndInfo = styled.div`
     font-size: 44px;
     font-weight: 700;
     text-align: center;
-  }
-
-  .topics {
-    /* margin-top: 40px; */
   }
 
   p {
@@ -139,7 +116,6 @@ export const ServicesPlusEndInfo = styled.div`
 `;
 
 export const ServicesPlusEndImage = styled.div`
-  /* height: 405px; */
   padding: 0 30px;
 
   img {

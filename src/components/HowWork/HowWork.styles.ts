@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
   margin: 0;
   margin-top: 40px;
 
@@ -16,10 +15,6 @@ export const Animation = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     margin: 40px 0;
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
   }
 `;
 
@@ -43,8 +38,6 @@ export const HowWorkInfo = styled.div`
   }
 
   .topics {
-    /* margin-top: 30px; */
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

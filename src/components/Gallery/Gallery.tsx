@@ -32,15 +32,6 @@ export function Gallery() {
             </p>
 
             <InstagramContainer>
-              {/* <div className="image-instagram">
-              <img
-                className="image-avatar"
-                src="/images/personal/personal-lilian-profile.jpg"
-                alt="instagram hero"
-              />
-            </div> */}
-              {/* <strong>Lílian Azevedo - Personal Organizer</strong> */}
-
               <a
                 href="https://www.instagram.com/lilianazevedoorganizer/"
                 target="_blank"

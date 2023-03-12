@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
   margin: 84px 0;
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
@@ -14,26 +13,10 @@ export const Animation = styled.div`
   }
 
   @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
   }
 `;
 
 export const AboutContainer = styled.section`
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 20px;
-
-  max-width: 1500px;
-  margin: auto;
-
-  @media (max-width: ${theme.breakpoints.md}) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -41,7 +24,6 @@ export const AboutContainer = styled.section`
   padding: 0 20px;
 
   max-width: 1500px;
-  /* height: 400px; */
   margin: auto;
 
   @media (max-width: ${theme.breakpoints.md}) {
@@ -208,7 +190,6 @@ export const AboutInfoTitle = styled.div`
 `;
 
 export const AboutImage = styled.div`
-  /* height: 405px; */
   padding: 0 30px;
 
   img {

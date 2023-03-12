@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Animation = styled.div`
-  /* margin: 150px 0; */
   margin: 5rem 0;
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -12,14 +11,6 @@ export const Animation = styled.div`
 
   @media (max-width: ${theme.breakpoints.mdToLg}) {
     margin: 40px 0;
-  }
-
-  @media (max-width: ${theme.breakpoints.sm}) {
-    /* margin: 90px 0; */
-  }
-
-  @media (max-width: ${theme.breakpoints.xs}) {
-    /* margin: 30px 0; */
   }
 `;
 
@@ -135,16 +126,10 @@ export const ServicesInfo = styled.div`
 export const ServicesContent = styled.div``;
 
 export const ServicesClientInfo = styled.div`
-  /* max-width: 783px; */
-  /* text-align: center; */
   margin: 8px 0px 16px;
-
-  /* display: flex;
-  align-items: center; */
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* align-items: center; */
 
   p {
     color: ${theme.colors.infoText};
@@ -210,8 +195,6 @@ export const ServicesClientInfo = styled.div`
       margin-top: 1.25rem;
       padding: 1rem;
       font-size: 0.875rem;
-
-      /* position: relative; */
 
       & > img {
         width: 54px;
@@ -401,8 +384,6 @@ export const ClientInfoContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  /* margin-top: 30px; */
-
   .client-info {
     padding: 1.25rem;
     border-radius: 1.25rem;
@@ -497,9 +478,6 @@ export const ClientInfoBottomContainer = styled.div`
 
   @media (max-width: ${theme.breakpoints.sm}) {
     .client-info {
-      /* width: 100%; */
-
-      /* max-width: 400px; */
       max-width: 600px;
       width: 90%;
 
@@ -513,64 +491,4 @@ export const ClientInfoBottomContainer = styled.div`
       }
     }
   }
-  /*
-  @media (max-width: 500px) {
-    .client-info {
-      max-width: 350px;
-
-      & > img {
-        width: 54px;
-        height: 160px;
-
-        top: -25px;
-        right: -30px;
-        transform: rotate(8deg);
-      }
-    }
-  }
-
-  @media (max-width: 450px) {
-    .client-info {
-      max-width: 300px;
-
-      & > img {
-        width: 54px;
-        height: 160px;
-
-        top: -25px;
-        right: -30px;
-        transform: rotate(8deg);
-      }
-    }
-  }
-
-  @media (max-width: 400px) {
-    .client-info {
-      max-width: 250px;
-
-      & > img {
-        width: 54px;
-        height: 160px;
-
-        top: -25px;
-        right: -30px;
-        transform: rotate(8deg);
-      }
-    }
-  }
-
-  @media (max-width: 350px) {
-    .client-info {
-      max-width: 200px;
-
-      & > img {
-        width: 54px;
-        height: 160px;
-
-        top: -25px;
-        right: -30px;
-        transform: rotate(8deg);
-      }
-    }
-  } */
 `;
