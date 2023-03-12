@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +18,8 @@ import { Contact } from '../components/Contact/Contact';
 import { Footer } from '../components/Footer/Footer';
 
 export default function Home() {
+  const router = useRouter();
+
   useEffect(() => {
     AOS.init({
       duration: 400
@@ -41,6 +44,8 @@ export default function Home() {
       top: 0,
       behavior: 'smooth'
     });
+
+    router.push('/');
   };
 
   return (

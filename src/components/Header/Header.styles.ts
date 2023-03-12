@@ -49,13 +49,15 @@ export const ContainerHeader = styled.header<MenuProps>`
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     color: ${theme.colors.primaryText};
+
     div.link {
       color: ${theme.colors.primaryText};
-      height: 150px;
+      /* height: 150px; */
       display: flex;
       align-items: center;
       /* font-weight: 500; */
       /* border-bottom: 2px solid transparent; */
+      line-height: 40px;
     }
 
     div.link:hover {

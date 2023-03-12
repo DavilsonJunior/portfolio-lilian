@@ -10,7 +10,15 @@ export function Header() {
   const router = useRouter();
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
-  const navigateToContent = (route: string) => {
+  const navigateToContent = async (route: string) => {
+    const element = document?.querySelector('#isGalleryPage');
+
+    if (element) {
+      router.push('/');
+
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+
     router.push(route);
   };
 

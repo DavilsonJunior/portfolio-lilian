@@ -13,7 +13,7 @@ export function GalleryView() {
     <Animation id="GalleryView">
       <GalleryViewContainer className="hero">
         <GalleryViewInfo data-aos="fade-up">
-          <h1>Fotos</h1>
+          <h1 id="isGalleryPage">Fotos</h1>
         </GalleryViewInfo>
         <GalleryViewImagesContainer data-aos="fade-down">
           {galleries.map(item => (
